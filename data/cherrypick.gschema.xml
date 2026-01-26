@@ -9,7 +9,7 @@
     <value value="5" nick="hsla"/>
   </enum>
 
-  <schema path="/io.github.ellie_commons.cherrypick/" id="io.github.ellie_commons.cherrypick">
+  <schema path="/io/github/ellie_commons/cherrypick/" id="io.github.ellie_commons.cherrypick">
     <key name="color-history" type="as">
       <!-- Setting default to some of the colors from elementary palette -->
       <default>["rgba(237, 83, 83, 1)", "rgba(243, 115, 41, 1)", "rgba(249, 196, 64, 1)", "rgba(155, 219, 77, 1)", "rgba(165, 109, 226, 1)"]</default>
