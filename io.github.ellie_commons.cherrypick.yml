@@ -1,15 +1,17 @@
 id: io.github.ellie_commons.cherrypick
-runtime: io.elementary.Platform
-# Currently this crashes for 8.2 (which flathub has) bc https://github.com/elementary/granite/pull/893
-runtime-version: '8'
-sdk: io.elementary.Sdk
+# elementary SDK is not available on Flathub, so use the elementary BaseApp instead
+base: io.elementary.BaseApp
+base-version: 'circe-25.08'
+runtime: org.gnome.Platform
+runtime-version: '49'
+sdk: org.gnome.Sdk
 command: io.github.ellie_commons.cherrypick
 
 finish-args:
   - '--share=ipc'
+  - '--device=dri'
   - '--socket=fallback-x11'
   - '--socket=wayland'
-  - '--device=dri'
 
 cleanup:
   -  '/include'
@@ -27,5 +29,10 @@ modules:
   - name: cherrypick
     buildsystem: meson
     sources:
-      - type: dir
-        path: .
+      - type: git
+        url: https://github.com/ellie-commons/cherrypick.git
+        tag: 2.3.0
+        commit: ed215bda8d53d2475597317fb44844a3c35ed325
+        x-checker-data:
+          type: git
+          tag-pattern: '^([\d.]+)$'
