@@ -19,6 +19,14 @@
     </ul>
   </description>
 
+  <provides>
+      <id>io.github.ellie_commons.cherrypick</id>
+      <binary>io.github.ellie_commons.cherrypick</binary>
+  </provides>
+  <replaces>
+      <id>io.github.ellie_commons.cherrypick</id>
+  </replaces>
+
   <content_rating type="oars-1.1"/>
   <translation type="gettext" source_locale="en_GB">io.github.ellie_commons.cherrypick</translation>
   <recommends>
@@ -27,7 +35,7 @@
   </recommends>
 
   <developer id="io.github.elly-code">
-    <name>PhoneyBadger + ellie-commons community</name>
+    <name>PhoneyBadger + Stella and Charlie</name>
   </developer>
   <project_group>ellie-commons</project_group>
     <url type="homepage">https://github.com/elly-code/cherrypick</url>
