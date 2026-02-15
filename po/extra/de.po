@@ -9,7 +9,7 @@ msgstr ""
 "PO-Revision-Date: 2022-05-29 02:15+0530\n"
 "POT-Creation-Date: 2025-12-26 17:04+0100\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Project-Id-Version: io.github.ellie_commons.cherrypick\n"
+"Project-Id-Version: io.github.elly_code.cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
 
 #: data/cherrypick.desktop.in:5
@@ -111,8 +111,8 @@ msgid "You can right-click on app icon and choose \"Immediately pick\""
 msgstr "Sie können mit der rechten Maustaste auf das App-Symbol klicken und \"Sofort auswählen\" wählen."
 
 #: data/cherrypick.metainfo.xml.in:92
-msgid "Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-pick\""
-msgstr "Oder setzen Sie eine Schlüsselbindung auf \"flatpak run io.ellie_commons.cherrypick --immediately-pick\""
+msgid "Or set a keybind to \"flatpak run io.elly_code.cherrypick --immediately-pick\""
+msgstr "Oder setzen Sie eine Schlüsselbindung auf \"flatpak run io.elly_code.cherrypick --immediately-pick\""
 
 #: data/cherrypick.metainfo.xml.in:93
 msgid "Updated deprecated widgets"

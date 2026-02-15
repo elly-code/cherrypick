@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.ellie_commons.cherrypick\n"
+"Project-Id-Version: io.github.elly_code.cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-26 17:04+0100\n"
 "PO-Revision-Date: 2022-09-27 20:44+0900\n"
@@ -126,10 +126,10 @@ msgstr ""
 
 #: data/cherrypick.metainfo.xml.in:92
 msgid ""
-"Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-"
+"Or set a keybind to \"flatpak run io.elly_code.cherrypick --immediately-"
 "pick\""
 msgstr ""
-"Или установите привязку клавиш на \"flatpak run io.ellie_commons.cherrypick "
+"Или установите привязку клавиш на \"flatpak run io.elly_code.cherrypick "
 "--immediately-pick\"."
 
 #: data/cherrypick.metainfo.xml.in:93

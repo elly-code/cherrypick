@@ -118,10 +118,10 @@ msgstr "Puoi fare clic con il tasto destro sull'icona dell'app e scegliere \"Sel
    
 #: data/cherrypick.metainfo.xml.in:92  
 msgid ""  
-"Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-"  
+"Or set a keybind to \"flatpak run io.elly_code.cherrypick --immediately-"  
 "pick\""  
 msgstr ""  
-"Oppure imposta un tasto di scelta rapida a \"flatpak run io.ellie_commons.cherrypick --immediately-pick\""  
+"Oppure imposta un tasto di scelta rapida a \"flatpak run io.elly_code.cherrypick --immediately-pick\""  
    
 #: data/cherrypick.metainfo.xml.in:93  
 msgid "Updated deprecated widgets"  

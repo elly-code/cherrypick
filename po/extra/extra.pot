@@ -117,7 +117,7 @@ msgstr ""
 
 #: data/cherrypick.metainfo.xml.in:92
 msgid ""
-"Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-"
+"Or set a keybind to \"flatpak run io.elly_code.cherrypick --immediately-"
 "pick\""
 msgstr ""
 
