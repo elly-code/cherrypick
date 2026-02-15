@@ -20,11 +20,11 @@
   </description>
 
   <provides>
-      <id>io.github.ellie_commons.cherrypick</id>
-      <binary>io.github.ellie_commons.cherrypick</binary>
+      <id>io.github.elly_code.cherrypick</id>
+      <binary>io.github.elly_code.cherrypick</binary>
   </provides>
   <replaces>
-      <id>io.github.ellie_commons.cherrypick</id>
+      <id>io.github.elly_code.cherrypick</id>
   </replaces>
 
   <content_rating type="oars-1.1"/>
