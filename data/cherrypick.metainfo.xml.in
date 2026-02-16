@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.elly_code.cherrypick</id>
+  <id>io.github.ellie_commons.cherrypick</id>
   <name>Cherrypick</name>
   <summary>Pick colors on your screen</summary>
-  <launchable type="desktop-id">io.github.elly_code.cherrypick.desktop</launchable>
+  <launchable type="desktop-id">io.github.ellie_commons.cherrypick.desktop</launchable>
   <metadata_license>CC-BY-4.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
 
@@ -20,41 +20,41 @@
   </description>
 
   <provides>
-      <id>io.github.ellie_commons.cherrypick</id>
-      <binary>io.github.ellie_commons.cherrypick</binary>
+      <id>io.github.elly_code.cherrypick</id>
+      <binary>io.github.elly_code.cherrypick</binary>
   </provides>
   <replaces>
-      <id>io.github.ellie_commons.cherrypick</id>
+      <id>io.github.elly_code.cherrypick</id>
   </replaces>
 
   <content_rating type="oars-1.1"/>
-  <translation type="gettext" source_locale="en_GB">io.github.elly_code.cherrypick</translation>
+  <translation type="gettext" source_locale="en_GB">io.github.ellie_commons.cherrypick</translation>
   <recommends>
     <control>pointing</control>
     <control>touch</control>
   </recommends>
 
-  <developer id="io.github.elly-code">
+  <developer id="io.github.ellie-commons">
     <name>PhoneyBadger + Stella and Charlie</name>
   </developer>
-  <project_group>elly-code</project_group>
-    <url type="homepage">https://github.com/elly-code/cherrypick</url>
-    <url type="bugtracker">https://github.com/elly-code/cherrypick/issues</url>
-    <url type="help">https://github.com/elly-code/cherrypick/issues</url>
+  <project_group>ellie-commons</project_group>
+    <url type="homepage">https://github.com/ellie-commons/cherrypick</url>
+    <url type="bugtracker">https://github.com/ellie-commons/cherrypick/issues</url>
+    <url type="help">https://github.com/ellie-commons/cherrypick/issues</url>
     <url type="donation">https://ko-fi.com/teamcons</url>
-    <url type="vcs-browser">https://github.com/elly-code/cherrypick</url>
+    <url type="vcs-browser">https://github.com/ellie-commons/cherrypick</url>
 
   <screenshots>
     <screenshot type="default">
       <caption>Cherrypick's main window</caption>
       <image>
-        https://github.com/elly-code/cherrypick/blob/main/data/screenshots/window-light.png?raw=true
+        https://github.com/ellie-commons/cherrypick/blob/main/data/screenshots/window-light.png?raw=true
       </image>
     </screenshot>
     <screenshot>
       <caption>Main window with dark theme</caption>
       <image>
-        https://github.com/elly-code/cherrypick/blob/main/data/screenshots/window-dark.png?raw=true
+        https://github.com/ellie-commons/cherrypick/blob/main/data/screenshots/window-dark.png?raw=true
       </image>
     </screenshot>
   </screenshots>
@@ -89,7 +89,7 @@
         </ul>
       </description>
       <issues>
-        <issue url="https://github.com/elly-code/cherrypick/issues/21">Fix alpha not being restored properly</issue>
+        <issue url="https://github.com/ellie-commons/cherrypick/issues/21">Fix alpha not being restored properly</issue>
       </issues>
     </release>
     <release date="2025-09-13" version="2.1.2">
@@ -114,7 +114,7 @@
           <li>App now works on ARM thanks to @ryonakano!</li>
           <li>Add the ability to immediately pick and copy to clipboard</li>
           <li>You can right-click on app icon and choose "Immediately pick"</li>
-          <li>Or set a keybind to "flatpak run io.elly_code.cherrypick --immediately-pick"</li>
+          <li>Or set a keybind to "flatpak run io.ellie_commons.cherrypick --immediately-pick"</li>
           <li>Updated deprecated widgets</li>
           <li>Minute tweaks by @ryonakano thanks again!</li>
         </ul>
