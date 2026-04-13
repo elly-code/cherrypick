@@ -87,7 +87,7 @@ appstream_conf.set('APP_NAME', app_name)
 appstream_conf.set('APP_ID', app_id)
 appstream_conf.set('APP_VERSION', app_version)
 appstream_conf.set('GETTEXT_PACKAGE', gettext_name)
-appstream_conf.set('ALTERNATE_APP_ID', alternate_app_id)
+appstream_conf.set('ALTERNATE_ID', alternate_app_id)
 appstream_file_in = configure_file(
     input: 'cherrypick.metainfo.xml.in.in',
     output: app_id + '.metainfo.xml.in',
