@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 17:31+0200\n"
+"POT-Creation-Date: 2026-04-13 21:02+0200\n"
 "PO-Revision-Date: 2026-01-14 15:57+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: \n"
@@ -14,55 +14,56 @@ msgstr ""
 "X-Generator: Poedit 3.8\n"
 
 #. /TRANSLATORS: Do not translate app name
-#: src/Windows/Window.vala:12
+#. We need to hide the title area for the split headerbar
+#: src/Windows/Window.vala:12 src/Windows/Window.vala:25
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
-#: src/Windows/Window.vala:23
+#: src/Windows/Window.vala:29 src/Windows/Window.vala:30
 #, fuzzy
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick"
 
 #. ---------------- FORMAT ----------------
-#: src/Views/MainView.vala:68
+#: src/Views/MainView.vala:72
 msgid "Format"
 msgstr "Format"
 
 #. ---------------- BIG BUTTON ----------------
-#: src/Views/MainView.vala:85
+#: src/Views/MainView.vala:88
 msgid "Pick Color"
 msgstr "Välj färg"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:92
 #, fuzzy
 msgid "Click to pick a color on the screen"
 msgstr "Klicka för att klistra in en färg om du har en sparad"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:144
 #, fuzzy
 msgid "History reset"
 msgstr "Historik sparad"
 
-#: src/Widgets/FormatArea.vala:67
+#: src/Widgets/FormatArea.vala:35
 #, fuzzy
 msgid "Paste colour if available in clipboard"
 msgstr "Välj en färg och kopiera den till urklipp"
 
-#: src/Widgets/FormatArea.vala:72
+#: src/Widgets/FormatArea.vala:40
 #, fuzzy
 msgid "Copy colour to clipboard"
 msgstr "Kopierad till urklipp!"
 
-#: src/Widgets/FormatArea.vala:77
+#: src/Widgets/FormatArea.vala:46
 msgid "Choose your preferred format to display picked colours"
 msgstr "Välj önskat format för att visa valda färger"
 
-#: src/Widgets/FormatArea.vala:111
+#: src/Widgets/FormatArea.vala:102
 #, fuzzy
 msgid "Copied to clipboard"
 msgstr "Kopierad till urklipp!"
 
-#: src/Widgets/FormatArea.vala:140
+#: src/Widgets/FormatArea.vala:131
 msgid "Cannot detect colour!"
 msgstr "Kan inte upptäcka färg!"
 
@@ -83,12 +84,16 @@ msgid "History saved"
 msgstr "Historik sparad"
 
 #: src/Widgets/HistoryHeader.vala:62
-msgid "Snapshot restored"
-msgstr "Ögonblicksbild återställd"
+#, fuzzy
+msgid "History restored"
+msgstr "Historik sparad"
 
 #: src/Application.vala:110
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Välj en färg och kopiera den till urklipp"
+
+#~ msgid "Snapshot restored"
+#~ msgstr "Ögonblicksbild återställd"
 
 #, fuzzy
 #~ msgid "Reset history"

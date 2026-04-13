@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 17:31+0200\n"
+"POT-Creation-Date: 2026-04-13 21:02+0200\n"
 "PO-Revision-Date: 2022-09-27 20:44+0900\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: none\n"
@@ -14,56 +14,57 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #. /TRANSLATORS: Do not translate app name
-#: src/Windows/Window.vala:12
+#. We need to hide the title area for the split headerbar
+#: src/Windows/Window.vala:12 src/Windows/Window.vala:25
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
-#: src/Windows/Window.vala:23
+#: src/Windows/Window.vala:29 src/Windows/Window.vala:30
 #, fuzzy
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick"
 
 #. ---------------- FORMAT ----------------
-#: src/Views/MainView.vala:68
+#: src/Views/MainView.vala:72
 msgid "Format"
 msgstr "Формат"
 
 #. ---------------- BIG BUTTON ----------------
-#: src/Views/MainView.vala:85
+#: src/Views/MainView.vala:88
 msgid "Pick Color"
 msgstr "Выбрать цвет"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:92
 #, fuzzy
 msgid "Click to pick a color on the screen"
 msgstr "Нажмите, чтобы вставить цвет, если он у вас сохранен."
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:144
 #, fuzzy
 msgid "History reset"
 msgstr "История"
 
-#: src/Widgets/FormatArea.vala:67
+#: src/Widgets/FormatArea.vala:35
 #, fuzzy
 msgid "Paste colour if available in clipboard"
 msgstr "Сразу же выберите цвет и скопируйте его в буфер обмена"
 
-#: src/Widgets/FormatArea.vala:72
+#: src/Widgets/FormatArea.vala:40
 #, fuzzy
 msgid "Copy colour to clipboard"
 msgstr "Скопировано в буфер обмена"
 
-#: src/Widgets/FormatArea.vala:77
+#: src/Widgets/FormatArea.vala:46
 #, fuzzy
 msgid "Choose your preferred format to display picked colours"
 msgstr "История последних выбранных цветов"
 
-#: src/Widgets/FormatArea.vala:111
+#: src/Widgets/FormatArea.vala:102
 #, fuzzy
 msgid "Copied to clipboard"
 msgstr "Скопировано в буфер обмена"
 
-#: src/Widgets/FormatArea.vala:140
+#: src/Widgets/FormatArea.vala:131
 msgid "Cannot detect colour!"
 msgstr "Невозможно определить цвет!"
 
@@ -85,13 +86,17 @@ msgid "History saved"
 msgstr "История"
 
 #: src/Widgets/HistoryHeader.vala:62
-msgid "Snapshot restored"
-msgstr "Восстановленный моментальный снимок"
+#, fuzzy
+msgid "History restored"
+msgstr "История"
 
 #: src/Application.vala:110
 #, fuzzy
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Сразу же выберите цвет и скопируйте его в буфер обмена"
+
+#~ msgid "Snapshot restored"
+#~ msgstr "Восстановленный моментальный снимок"
 
 #, fuzzy
 #~ msgid "Reset history"

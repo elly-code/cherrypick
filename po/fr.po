@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 17:31+0200\n"
+"POT-Creation-Date: 2026-04-13 21:02+0200\n"
 "PO-Revision-Date: 2022-05-29 02:15+0530\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -13,50 +13,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. /TRANSLATORS: Do not translate app name
-#: src/Windows/Window.vala:12
+#. We need to hide the title area for the split headerbar
+#: src/Windows/Window.vala:12 src/Windows/Window.vala:25
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
-#: src/Windows/Window.vala:23
+#: src/Windows/Window.vala:29 src/Windows/Window.vala:30
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick (Devel)"
 
 #. ---------------- FORMAT ----------------
-#: src/Views/MainView.vala:68
+#: src/Views/MainView.vala:72
 msgid "Format"
 msgstr "Format"
 
 #. ---------------- BIG BUTTON ----------------
-#: src/Views/MainView.vala:85
+#: src/Views/MainView.vala:88
 msgid "Pick Color"
 msgstr "Choisir la couleur"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:92
 msgid "Click to pick a color on the screen"
 msgstr "Cliquer pour sélectionner une couleur à l'écran"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:144
 msgid "History reset"
 msgstr "Historique réinitialisé"
 
-#: src/Widgets/FormatArea.vala:67
+#: src/Widgets/FormatArea.vala:35
 msgid "Paste colour if available in clipboard"
 msgstr "Coller une couleur depuis le presse-papiers si disponible"
 
-#: src/Widgets/FormatArea.vala:72
+#: src/Widgets/FormatArea.vala:40
 msgid "Copy colour to clipboard"
 msgstr "Copier vers le presse-papiers"
 
-#: src/Widgets/FormatArea.vala:77
+#: src/Widgets/FormatArea.vala:46
 msgid "Choose your preferred format to display picked colours"
 msgstr ""
 "Choisissez votre format préféré pour afficher les couleurs sélectionnées"
 
-#: src/Widgets/FormatArea.vala:111
+#: src/Widgets/FormatArea.vala:102
 msgid "Copied to clipboard"
 msgstr "Copié dans le presse-papiers"
 
-#: src/Widgets/FormatArea.vala:140
+#: src/Widgets/FormatArea.vala:131
 msgid "Cannot detect colour!"
 msgstr "Impossible de détecter une couleur !"
 
@@ -77,12 +78,15 @@ msgid "History saved"
 msgstr "Historique sauvé"
 
 #: src/Widgets/HistoryHeader.vala:62
-msgid "Snapshot restored"
-msgstr "Instantané restauré"
+msgid "History restored"
+msgstr "Historique rétabli"
 
 #: src/Application.vala:110
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Choisissez une couleur et copiez-la dans le presse-papiers."
+
+#~ msgid "Snapshot restored"
+#~ msgstr "Instantané restauré"
 
 #~ msgid "Reset history"
 #~ msgstr "Réinitialiser l'historique"
