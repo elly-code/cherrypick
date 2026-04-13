@@ -1,5 +1,6 @@
-picker_source_files = files(
-  'Main.vala',
+
+sources = files(
+  'Constants.vala',
   'Application.vala',
   'Models/Color.vala',
   'Models/Format.vala',
@@ -14,4 +15,13 @@ picker_source_files = files(
   'Services/ColorPicker.vala',
   'Services/Settings.vala',
   'Controllers/ColorController.vala'
+)
+
+executable(
+    app_id,
+    gresource,
+    config_file,
+    sources,
+    dependencies: picker_dependencies,
+    install: true
 )

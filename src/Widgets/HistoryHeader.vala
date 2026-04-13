@@ -1,16 +1,15 @@
 /*
  * SPDX-License-Identifier: GPL-3.0-or-later
  * SPDX-FileCopyrightText:  2022 Adithyan K V <adithyankv@protonmail.com>
- *                          2025 Stella & Charlie (teamcons.carrd.co)
- *                          2025 Contributions from the ellie_Commons community (github.com/ellie-commons/)
+ *                          2025 Contributions from the ellie-Commons community (github.com/ellie-commons/)
+ *                          2025-2026 Stella & Charlie (teamcons.carrd.co)
  */
-
 /**
 * A label announcing the HistoryButtons, with a couple buttons on the right operating it
 */
 class Cherrypick.HistoryHeader: Granite.Bin {
 
-    public signal void saved (string message);
+    public signal void on_message (string message);
 
     construct {
         /* -------- START WIDGET -------- */
@@ -44,20 +43,22 @@ class Cherrypick.HistoryHeader: Granite.Bin {
 
         child = centerbox;
 
-
-        var settings = Settings.get_instance ();
-
-        history_save.clicked.connect (() => {
-            var snapshot = settings.get_strv ("color-history");
-            settings.set_strv ("color-snapshot", snapshot);
-            saved (_("History saved"));
-        ;});
-
-        history_restore.clicked.connect (() => {
-            var snapshot = settings.get_strv ("color-snapshot");
-            settings.set_strv ("color-history", snapshot);
-            ColorController.get_instance ().load_history_from_gsettings ();
-        });
+        history_save.clicked.connect (on_save);
+        history_restore.clicked.connect (on_restore);
     }
 
+    public void on_save () {
+        var settings = Settings.get_instance ();
+        var snapshot = settings.get_strv (KEY_HISTORY);
+        settings.set_strv (KEY_SNAPSHOT, snapshot);
+        on_message (_("History saved"));
+    }
+
+    public void on_restore () {
+        var settings = Settings.get_instance ();
+        var snapshot = settings.get_strv (KEY_SNAPSHOT);
+        settings.set_strv (KEY_HISTORY, snapshot);
+        ColorController.get_instance ().load_history_from_gsettings ();
+        on_message (_("Snapshot restored"));
+    }
 }

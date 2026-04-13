@@ -1,21 +1,19 @@
 id: io.github.elly_code.cherrypick
 runtime: io.elementary.Platform
-# Currently this crashes for 8.2 (which flathub has) bc https://github.com/elementary/granite/pull/893
-runtime-version: '8'
+runtime-version: '8.2'
 sdk: io.elementary.Sdk
 command: io.github.elly_code.cherrypick
 
 finish-args:
   - '--share=ipc'
+  - '--device=dri'
   - '--socket=fallback-x11'
   - '--socket=wayland'
-  - '--device=dri'
 
 cleanup:
   -  '/include'
   -  '/lib/pkgconfig'
   -  '/man'
-  -  '/share/doc'
   -  '/share/gtk-doc'
   -  '/share/man'
   -  '/share/pkgconfig'

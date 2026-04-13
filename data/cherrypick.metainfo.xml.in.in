@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.elly_code.cherrypick</id>
-  <name>Cherrypick</name>
+  <id>@APP_ID@</id>
+  <name>@APP_NAME@</name>
   <summary>Pick colors on your screen</summary>
-  <launchable type="desktop-id">io.github.elly_code.cherrypick.desktop</launchable>
+  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
   <metadata_license>CC-BY-4.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
 
@@ -20,15 +20,15 @@
   </description>
 
   <provides>
-      <id>io.github.ellie_commons.cherrypick</id>
-      <binary>io.github.ellie_commons.cherrypick</binary>
+      <id>@ALTERNATE_ID@</id>
+      <binary>@ALTERNATE_ID@</binary>
   </provides>
   <replaces>
-      <id>io.github.ellie_commons.cherrypick</id>
+      <id>@ALTERNATE_ID@</id>
   </replaces>
 
   <content_rating type="oars-1.1"/>
-  <translation type="gettext" source_locale="en_GB">io.github.elly_code.cherrypick</translation>
+  <translation type="gettext">@GETTEXT_PACKAGE@</translation>
   <recommends>
     <control>pointing</control>
     <control>touch</control>
@@ -37,24 +37,24 @@
   <developer id="io.github.elly-code">
     <name>PhoneyBadger + Stella and Charlie</name>
   </developer>
-  <project_group>elly-code</project_group>
+  <project_group>ellie-commons</project_group>
     <url type="homepage">https://github.com/elly-code/cherrypick</url>
     <url type="bugtracker">https://github.com/elly-code/cherrypick/issues</url>
     <url type="help">https://github.com/elly-code/cherrypick/issues</url>
-    <url type="donation">https://ko-fi.com/teamcons</url>
+    <url type="donation">https://ko-fi.com/teamcons/tip</url>
     <url type="vcs-browser">https://github.com/elly-code/cherrypick</url>
 
   <screenshots>
     <screenshot type="default">
       <caption>Cherrypick's main window</caption>
       <image>
-        https://github.com/elly-code/cherrypick/blob/main/data/screenshots/window-light.png?raw=true
+        <image>https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-light.png</image>
       </image>
     </screenshot>
     <screenshot>
       <caption>Main window with dark theme</caption>
       <image>
-        https://github.com/elly-code/cherrypick/blob/main/data/screenshots/window-dark.png?raw=true
+        <image>https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-dark.png</image>
       </image>
     </screenshot>
   </screenshots>
@@ -65,6 +65,14 @@
     </branding>
 
   <releases>
+    <release date="2026-04-14" version="2.4.0">
+      <description>
+        <ul>
+          <li>Fixed broken translations</li>
+          <li>Update for german and french</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-01-13" version="2.3.0">
       <description>
         <ul>
@@ -114,7 +122,7 @@
           <li>App now works on ARM thanks to @ryonakano!</li>
           <li>Add the ability to immediately pick and copy to clipboard</li>
           <li>You can right-click on app icon and choose "Immediately pick"</li>
-          <li>Or set a keybind to "flatpak run io.elly_code.cherrypick --immediately-pick"</li>
+          <li>Or set a keybind to "flatpak run io.ellie_commons.cherrypick --immediately-pick"</li>
           <li>Updated deprecated widgets</li>
           <li>Minute tweaks by @ryonakano thanks again!</li>
         </ul>
@@ -139,43 +147,5 @@
         </ul>
       </description>
     </release>
-    <release date="2022-07-03" version="1.1.0">
-      <description>
-        <p>Add command line flag to open directly in color picking mode</p>
-      </description>
-    </release>
-    <release date="2022-06-18" version="1.0.4">
-      <description>
-        <ul>
-          <li>Fix layout bug when opening multiple instances</li>
-          <li>Make pick color button the default focused widget</li>
-          <li>Remove payment option from appcenter</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2022-06-08" version="1.0.3">
-      <description>
-        <ul>
-          <li>Update to elementary platform 7</li>
-          <li>Minor change to app description</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2022-05-30" version="1.0.2">
-      <description>
-        <p>Fix inaccuracies in metadata</p>
-      </description>
-    </release>
-    <release date="2022-05-29" version="1.0.1">
-      <description>
-        <p>Add stripe key</p>
-      </description>
-    </release>
-    <release date="2022-05-29" version="1.0.0">
-      <description>
-        <p>Initial release</p>
-      </description>
-    </release>
   </releases>
-
 </component>

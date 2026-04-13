@@ -1,36 +1,17 @@
 /*
  * SPDX-License-Identifier: GPL-3.0-or-later
  * SPDX-FileCopyrightText:  2022 Adithyan K V <adithyankv@protonmail.com>
- *                          2025 Stella & Charlie (teamcons.carrd.co)
- *                          2025 Contributions from the ellie_Commons community (github.com/ellie-commons/)
+ *                          2025 Contributions from the ellie-Commons community (github.com/ellie-commons/)
+ *                          2025-2026 Stella & Charlie (teamcons.carrd.co)
  */
+public class Cherrypick.Window : Gtk.ApplicationWindow {
 
-public class Cherrypick.Window : Gtk.Window {
+    private Cherrypick.MainView main_view;
 
-    private static GLib.Once<Cherrypick.Window> _instance;
-    public static unowned Cherrypick.Window instance (Application application) {
-        return _instance.once (() => { return new Cherrypick.Window (application);});
-    }
 
-    private Cherrypick.MainView vbox;
 
-    public SimpleActionGroup actions { get; construct; }
-    public const string ACTION_PREFIX = "app.";
-    public const string ACTION_PICK = "pick";
-    public const string ACTION_COPY = "copy";
-    public const string ACTION_PASTE = "paste";
-
-    public static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
-
-    private const GLib.ActionEntry[] ACTION_ENTRIES = {
-        { ACTION_PICK, on_pick },
-        { ACTION_COPY, copy },
-        { ACTION_PASTE, paste }
-    };
-
-    public Window (Gtk.Application app) {
+    public Window () {
         Object (
-            application: app,
             ///TRANSLATORS: Do not translate app name
             title: _("Cherrypick"),
             default_width: 480,
@@ -42,14 +23,14 @@ public class Cherrypick.Window : Gtk.Window {
     construct {
         Intl.setlocale ();
 
-        var actions = new SimpleActionGroup ();
-        actions.add_action_entries (ACTION_ENTRIES, this);
-        insert_action_group ("app", actions);
+#if DEVEL
+        title = _("Cherrypick (Devel)");
+        add_css_class (DEVEL);
+#endif
 
         // We need to hide the title area for the split headerbar
         set_titlebar (new Gtk.Grid () {visible = false});
-
-        var titlelabel = new Gtk.Label (_("Cherrypick"));
+        var titlelabel = new Gtk.Label (title);
         titlelabel.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
         var headerbar = new Gtk.HeaderBar () {
@@ -59,7 +40,11 @@ public class Cherrypick.Window : Gtk.Window {
         //headerbar.show_title_buttons = false;
         //headerbar.pack_start (new Gtk.WindowControls (Gtk.PackType.START));
 
-        vbox = new Cherrypick.MainView ();
+        main_view = new Cherrypick.MainView ();
+
+        var actions = new SimpleActionGroup ();
+        actions.add_action_entries (MainView.ACTION_ENTRIES, this);
+        insert_action_group ("view", main_view.actions);
 
 
         /* We want the color preview area to span the entire height of the
@@ -67,7 +52,7 @@ public class Cherrypick.Window : Gtk.Window {
             including the headerbar */
         var window_grid = new Gtk.Grid ();
         window_grid.attach (headerbar, 0, 0);
-        window_grid.attach (vbox, 0, 1);
+        window_grid.attach (main_view, 0, 1);
         window_grid.attach (new Cherrypick.ColorPreview (), 1, 0, 1, 2);
 
         /* As the headerbar spans only half the window, it would be
@@ -81,18 +66,6 @@ public class Cherrypick.Window : Gtk.Window {
         /* when the app is opened the user probably wants to pick the color
             straight away. So setting the pick button as focused default
             action so that pressing Return or Space starts the pick */
-        set_focus (vbox.pick_button);
-    }
-
-    public void on_pick () {
-        vbox.on_pick ();
-    }
-
-    public void copy () {
-        vbox.copy ();
-    }
-
-    public void paste () {
-        vbox.paste ();
+        set_focus (main_view.pick_button);
     }
 }

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.elly_code.cherrypick\n"
+"Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-26 17:04+0100\n"
+"POT-Creation-Date: 2026-04-13 14:55+0200\n"
 "PO-Revision-Date: 2022-09-27 20:44+0900\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: none\n"
@@ -13,147 +13,167 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: data/cherrypick.desktop.in:5 data/cherrypick.metainfo.xml.in:4
+#: data/cherrypick.desktop.in.in:5
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
-#: data/cherrypick.desktop.in:6
+#: data/cherrypick.desktop.in.in:6
 msgid "Color Picker"
 msgstr "Подборщик цветов"
 
-#: data/cherrypick.desktop.in:7 data/cherrypick.metainfo.xml.in:5
+#: data/cherrypick.desktop.in.in:7 data/cherrypick.metainfo.xml.in.in:5
 #, fuzzy
 msgid "Pick colors on your screen"
 msgstr "Выбирайте цвета пикселей на экране"
 
-#: data/cherrypick.desktop.in:14
+#: data/cherrypick.desktop.in.in:14
 #, fuzzy
 msgid "Color;Pick;Eyedropper;Picker;"
 msgstr "Цвет;Выбрать;Пипетка;Выбор"
 
-#: data/cherrypick.desktop.in:18
+#: data/cherrypick.desktop.in.in:18
 #, fuzzy
 msgid "Pick a color"
 msgstr "Выбрать цвет"
 
-#: data/cherrypick.metainfo.xml.in:11
+#: data/cherrypick.metainfo.xml.in.in:4
+msgid "@APP_NAME@"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:11
 #, fuzzy
 msgid "A modern and trusty color picker"
 msgstr "Простая палитра цветов"
 
-#: data/cherrypick.metainfo.xml.in:12
+#: data/cherrypick.metainfo.xml.in.in:12
 msgid "Features:"
 msgstr "Функции:"
 
-#: data/cherrypick.metainfo.xml.in:14
+#: data/cherrypick.metainfo.xml.in.in:14
 msgid "Choose different output formats (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
 msgstr "Выбор различные форматы цветов (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
 
-#: data/cherrypick.metainfo.xml.in:15
+#: data/cherrypick.metainfo.xml.in.in:15
 msgid "Remembers your preferred format"
 msgstr "Запоминание вашего предпочитаемого формата"
 
-#: data/cherrypick.metainfo.xml.in:16
+#: data/cherrypick.metainfo.xml.in.in:16
 #, fuzzy
 msgid ""
 "Color history remembers your last picked colors (hover to check their code)"
 msgstr "История последних выбранных цветов"
 
-#: data/cherrypick.metainfo.xml.in:17
+#: data/cherrypick.metainfo.xml.in.in:17
 msgid "Curious about a color? Copy paste it from your clipboard to preview it"
 msgstr ""
 "Любопытно узнать о цвете? Скопируйте его из буфера обмена для "
 "предварительного просмотра"
 
-#: data/cherrypick.metainfo.xml.in:18
+#: data/cherrypick.metainfo.xml.in.in:18
 msgid "You can set a keybind to immediately pick and copy to clipboard!"
 msgstr ""
 "Вы можете установить привязку клавиш, чтобы немедленно выбрать и скопировать "
 "в буфер обмена!"
 
-#: data/cherrypick.metainfo.xml.in:30
+#: data/cherrypick.metainfo.xml.in.in:38
 #, fuzzy
-msgid "PhoneyBadger + Stella"
+msgid "PhoneyBadger + Stella and Charlie"
 msgstr "Phoney Badger"
 
-#: data/cherrypick.metainfo.xml.in:40
+#: data/cherrypick.metainfo.xml.in.in:49
 msgid "Cherrypick's main window"
 msgstr "Главное окно Cherrypick"
 
-#: data/cherrypick.metainfo.xml.in:46
+#: data/cherrypick.metainfo.xml.in.in:55
 msgid "Main window with dark theme"
 msgstr "Главное окно с темной темой"
 
-#: data/cherrypick.metainfo.xml.in:62
+#: data/cherrypick.metainfo.xml.in.in:71
+msgid "Organization change"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:72
+msgid "Show a pasted color has alpha by displaying a checkerboard"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:73
+msgid "Italian translation thanks to @albanobattistella!"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:80
+msgid "Prevent Cherrypick from lingering in the background"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:87
 msgid "Change branding colors to a nice cherry"
 msgstr ""
 
-#: data/cherrypick.metainfo.xml.in:63
+#: data/cherrypick.metainfo.xml.in.in:88
 msgid "All a glance: Preview tooltip shows all formats"
 msgstr ""
 
-#: data/cherrypick.metainfo.xml.in:73
+#: data/cherrypick.metainfo.xml.in.in:98
 msgid ""
 "Fix regression: Allow --immediately-pick when the window is already open"
 msgstr ""
 "Исправление регрессии: Разрешить --immediately-pick, когда окно уже открыто"
 
-#: data/cherrypick.metainfo.xml.in:74
+#: data/cherrypick.metainfo.xml.in.in:99
 msgid "Not sure how to fix yet: the crosshair doesnt show..."
 msgstr "Пока не знаю, как исправить: перекрестие не отображается..."
 
-#: data/cherrypick.metainfo.xml.in:81
+#: data/cherrypick.metainfo.xml.in.in:106
 msgid "Clean appdata for flathub release"
 msgstr "Очистите данные appdata для выпуска flathub"
 
-#: data/cherrypick.metainfo.xml.in:82
+#: data/cherrypick.metainfo.xml.in.in:107
 msgid "Make sure the app doesnt crash at startup for flathub builds"
 msgstr "Убедитесь, что приложение не падает при запуске для сборок flathub"
 
-#: data/cherrypick.metainfo.xml.in:89
+#: data/cherrypick.metainfo.xml.in.in:114
 msgid "App now works on ARM thanks to @ryonakano!"
 msgstr "Приложение теперь работает на ARM благодаря @ryonakano!"
 
-#: data/cherrypick.metainfo.xml.in:90
+#: data/cherrypick.metainfo.xml.in.in:115
 msgid "Add the ability to immediately pick and copy to clipboard"
 msgstr "Добавьте возможность мгновенного выбора и копирования в буфер обмена"
 
-#: data/cherrypick.metainfo.xml.in:91
+#: data/cherrypick.metainfo.xml.in.in:116
 msgid "You can right-click on app icon and choose \"Immediately pick\""
 msgstr ""
 "Вы можете щелкнуть правой кнопкой мыши на значке приложения и выбрать "
 "\"Немедленно выбрать\"."
 
-#: data/cherrypick.metainfo.xml.in:92
+#: data/cherrypick.metainfo.xml.in.in:117
 msgid ""
-"Or set a keybind to \"flatpak run io.elly_code.cherrypick --immediately-"
+"Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-"
 "pick\""
 msgstr ""
-"Или установите привязку клавиш на \"flatpak run io.elly_code.cherrypick "
+"Или установите привязку клавиш на \"flatpak run io.ellie_commons.cherrypick "
 "--immediately-pick\"."
 
-#: data/cherrypick.metainfo.xml.in:93
+#: data/cherrypick.metainfo.xml.in.in:118
 msgid "Updated deprecated widgets"
 msgstr "Обновление устаревших виджетов"
 
-#: data/cherrypick.metainfo.xml.in:94
+#: data/cherrypick.metainfo.xml.in.in:119
 msgid "Minute tweaks by @ryonakano thanks again!"
 msgstr "Минутные доработки от @ryonakano Спасибо еще раз!"
 
-#: data/cherrypick.metainfo.xml.in:100
+#: data/cherrypick.metainfo.xml.in.in:125
 msgid "Remove minor artifacts"
 msgstr "Удалите незначительные артефакты"
 
-#: data/cherrypick.metainfo.xml.in:105
+#: data/cherrypick.metainfo.xml.in.in:130
 msgid "2.0.0: The revival!"
 msgstr "2.0.0: Возрождение!"
 
-#: data/cherrypick.metainfo.xml.in:107
+#: data/cherrypick.metainfo.xml.in.in:132
 msgid ""
 "A new name, Cherrypick! Blessed by @adithyankv, the OG author. Thank you!"
 msgstr "Новое имя, Черрипик! Благословлено @adithyankv, автором OG. Спасибо!"
 
-#: data/cherrypick.metainfo.xml.in:108
+#: data/cherrypick.metainfo.xml.in.in:133
 msgid ""
 "Port to modern tech (GTK4, Wayland, portals, elementary 8). Not broken "
 "anymore!"
@@ -161,25 +181,25 @@ msgstr ""
 "Переход на современные технологии (GTK4, Wayland, порталы, elementary 8). "
 "Больше не ломается!"
 
-#: data/cherrypick.metainfo.xml.in:109
+#: data/cherrypick.metainfo.xml.in.in:134
 msgid "CMYK model available thanks to @DSLitvinov"
 msgstr "Модель CMYK доступна благодаря @DSLitvinov"
 
-#: data/cherrypick.metainfo.xml.in:110
+#: data/cherrypick.metainfo.xml.in.in:135
 msgid "HSL model available thanks to @ckruse's work on ColorMate"
 msgstr "Модель HSL доступна благодаря работе @ckruse над ColorMate"
 
-#: data/cherrypick.metainfo.xml.in:111
+#: data/cherrypick.metainfo.xml.in.in:136
 msgid "Also apparently HSLA is a thing so i added it"
 msgstr "Также, очевидно, HSLA - это вещь, поэтому я добавил ее."
 
-#: data/cherrypick.metainfo.xml.in:112
+#: data/cherrypick.metainfo.xml.in.in:137
 msgid "New feature: You can now paste a color from clipboard to preview it"
 msgstr ""
 "Новая функция: Теперь вы можете вставить цвет из буфера обмена, чтобы "
 "предварительно просмотреть его"
 
-#: data/cherrypick.metainfo.xml.in:113
+#: data/cherrypick.metainfo.xml.in.in:138
 msgid ""
 "New feature: Hover over history buttons to see their code in your preferred "
 "format"
@@ -187,40 +207,40 @@ msgstr ""
 "Новая функция: Наведите курсор на кнопки истории, чтобы увидеть их код в "
 "удобном для вас формате"
 
-#: data/cherrypick.metainfo.xml.in:119
+#: data/cherrypick.metainfo.xml.in.in:144
 msgid "Add command line flag to open directly in color picking mode"
 msgstr ""
 "Добавлен флаг командной строки для открытия сразу в режиме выбора цвета"
 
-#: data/cherrypick.metainfo.xml.in:125
+#: data/cherrypick.metainfo.xml.in.in:150
 msgid "Fix layout bug when opening multiple instances"
 msgstr "Исправлен баг интерфейса при открытии нескольких окон"
 
-#: data/cherrypick.metainfo.xml.in:126
+#: data/cherrypick.metainfo.xml.in.in:151
 msgid "Make pick color button the default focused widget"
 msgstr "Кнопка выбора цвета теперь сфокусирована по умолчанию"
 
-#: data/cherrypick.metainfo.xml.in:127
+#: data/cherrypick.metainfo.xml.in.in:152
 msgid "Remove payment option from appcenter"
 msgstr "Убрана опция покупки из AppCenter"
 
-#: data/cherrypick.metainfo.xml.in:134
+#: data/cherrypick.metainfo.xml.in.in:159
 msgid "Update to elementary platform 7"
 msgstr "Обновлено до elementary platform 7"
 
-#: data/cherrypick.metainfo.xml.in:135
+#: data/cherrypick.metainfo.xml.in.in:160
 msgid "Minor change to app description"
 msgstr "Небольшое изменение описания приложения"
 
-#: data/cherrypick.metainfo.xml.in:141
+#: data/cherrypick.metainfo.xml.in.in:166
 msgid "Fix inaccuracies in metadata"
 msgstr "Исправлены неаккуратности в метаданных"
 
-#: data/cherrypick.metainfo.xml.in:146
+#: data/cherrypick.metainfo.xml.in.in:171
 msgid "Add stripe key"
 msgstr "Добавлен ключ Stripe"
 
-#: data/cherrypick.metainfo.xml.in:151
+#: data/cherrypick.metainfo.xml.in.in:176
 msgid "Initial release"
 msgstr "Начальный релиз"
 

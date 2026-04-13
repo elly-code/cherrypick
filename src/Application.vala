@@ -20,33 +20,29 @@
 */
 
 public class Cherrypick.Application : Gtk.Application {
-    private Window? window;
+    private static Window? window;
     private static bool is_immediately_pick = false;
+
+    public const string ACTION_PREFIX = "app.";
+    public const string ACTION_QUIT = "action_quit";
+    public static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
+
+    private const GLib.ActionEntry[] ACTION_ENTRIES = {
+        { ACTION_QUIT, quit}
+    };
 
     public Application () {
         Object (
-            application_id: "io.github.elly_code.cherrypick",
+            application_id: APP_ID,
             flags: ApplicationFlags.HANDLES_COMMAND_LINE
         );
     }
 
     construct {
-        var quit_action = new SimpleAction ("quit", null);
-        add_action (quit_action);
-        set_accels_for_action ("app.quit", {"<Control>q"});
-        quit_action.activate.connect (quit);
-
-        var pick_action = new SimpleAction ("pick", null);
-        add_action (pick_action);
-        set_accels_for_action ("app.pick", {"<Control>p"});
-
-        var copy_action = new SimpleAction ("copy", null);
-        add_action (copy_action);
-        set_accels_for_action ("app.copy", {"<Control>c"});
-
-        var paste_action = new SimpleAction ("paste", null);
-        add_action (paste_action);
-        set_accels_for_action ("app.paste", {"<Control>v"});
+        Intl.setlocale (LocaleCategory.ALL, "");
+        Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (GETTEXT_PACKAGE);
     }
 
     public override void startup () {
@@ -54,11 +50,8 @@ public class Cherrypick.Application : Gtk.Application {
         Gtk.init ();
         Granite.init ();
 
-        Intl.setlocale (LocaleCategory.ALL, "");
-        Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-        Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-        Intl.textdomain (GETTEXT_PACKAGE);
-
+        add_action_entries (ACTION_ENTRIES, this);
+        set_accels_for_action ("app.action_quit", {"<Control>q"});
 
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
@@ -66,17 +59,17 @@ public class Cherrypick.Application : Gtk.Application {
         gtk_settings.gtk_theme_name = "io.elementary.stylesheet.strawberry";
 
         gtk_settings.gtk_application_prefer_dark_theme = (
-                                                        granite_settings.prefers_color_scheme == DARK
+            granite_settings.prefers_color_scheme == DARK
         );
 
         granite_settings.notify["prefers-color-scheme"].connect (() => {
             gtk_settings.gtk_application_prefer_dark_theme = (
-                                                            granite_settings.prefers_color_scheme == DARK
+                granite_settings.prefers_color_scheme == DARK
             );
         });
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/github/elly_code/cherrypick/Application.css");
+        provider.load_from_resource (APP_PATH + "Application.css");
         Gtk.StyleContext.add_provider_for_display (
             Gdk.Display.get_default (),
             provider,
@@ -87,14 +80,10 @@ public class Cherrypick.Application : Gtk.Application {
 
     public override void activate () {
 
-        /* Restricting to only one open instance of the application window.
-            It doesn't make much sense to have multiple instances as there
-            are no real valid use cases. And with the current architecture
-            the state is global and would be shared between multiple
-            instances anyway. */
-
         if (window == null) {
-            window = new Cherrypick.Window (this);
+            window = new Cherrypick.Window () {
+                application = this
+            };
             window.show ();
 
         } else {
@@ -104,13 +93,20 @@ public class Cherrypick.Application : Gtk.Application {
         /* Opens and immediately starts picking color if the --immediately-pick
             flag is passed when launching from the command line. This could
             be helpful for the user to set up keybindings and stuff */
-        if (is_immediately_pick) { window.on_pick (); is_immediately_pick = false;};
+        if (is_immediately_pick) {
+            window.activate_action (MainView.ACTION_PREFIX + MainView.ACTION_PICK, null);
+            is_immediately_pick = false;
+        };
+    }
+
+    public static int main (string[] args) {
+        return new Application ().run (args);
     }
 
     public override int command_line (ApplicationCommandLine command_line) {
         debug ("Parsing commandline arguments");
 
-        OptionEntry[] CMD_OPTION_ENTRIES = {
+        OptionEntry[] cmd_option_entries = {
             {"immediately-pick", 'p', OptionFlags.NONE, OptionArg.NONE, ref is_immediately_pick, _("Pick a colour and copy it to clipboard"), null}
         };
 
@@ -125,7 +121,7 @@ public class Cherrypick.Application : Gtk.Application {
         try {
             var ctx = new OptionContext ();
             ctx.set_help_enabled (true);
-            ctx.add_main_entries (CMD_OPTION_ENTRIES, null);
+            ctx.add_main_entries (cmd_option_entries, null);
             unowned string[] tmp = _args;
             ctx.parse (ref tmp);
 
