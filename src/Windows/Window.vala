@@ -19,15 +19,18 @@ public class Cherrypick.Window : Gtk.ApplicationWindow {
     construct {
         Intl.setlocale ();
 
-#if DEVEL
-        title = _("Cherrypick (Devel)");
-        add_css_class (DEVEL);
-#endif
 
         // We need to hide the title area for the split headerbar
         set_titlebar (new Gtk.Grid () {visible = false});
-        var titlelabel = new Gtk.Label (title);
+        var titlelabel = new Gtk.Label (_("Cherrypick"));
         titlelabel.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
+
+
+#if DEVEL
+        title = _("Cherrypick (Devel)");
+        titlelabel.label = _("Cherrypick (Devel)");
+        add_css_class (DEVEL);
+#endif
 
         var headerbar = new Gtk.HeaderBar () {
             title_widget = titlelabel
