@@ -1,23 +1,23 @@
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: es\n"
-"Language-Team: none\n"
-"Last-Translator: Automatically generated\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2022-05-29 02:15+0530\n"
-"POT-Creation-Date: 2026-04-13 16:58+0200\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-13 17:31+0200\n"
+"PO-Revision-Date: 2022-05-29 02:15+0530\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. /TRANSLATORS: Do not translate app name
-#: src/Windows/Window.vala:16
+#: src/Windows/Window.vala:12
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
-#: src/Windows/Window.vala:27
+#: src/Windows/Window.vala:23
 #, fuzzy
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick"
@@ -39,8 +39,8 @@ msgstr "Haz clic para pegar un color si tienes uno guardado"
 
 #: src/Views/MainView.vala:141
 #, fuzzy
-msgid "Reset history"
-msgstr "Restaurar instantánea del historial"
+msgid "History reset"
+msgstr "Historia guardada"
 
 #: src/Widgets/FormatArea.vala:67
 #, fuzzy
@@ -88,6 +88,10 @@ msgstr "Instantánea restaurada"
 #: src/Application.vala:110
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Elige un color y cópialo en el portapapeles"
+
+#, fuzzy
+#~ msgid "Reset history"
+#~ msgstr "Restaurar instantánea del historial"
 
 #~ msgid "Color palette reset"
 #~ msgstr "Restablecimiento de la paleta de colores"

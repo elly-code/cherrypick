@@ -1,24 +1,24 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: sv\n"
-"Language-Team: \n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-01-14 15:57+0100\n"
-"POT-Creation-Date: 2026-04-13 16:58+0200\n"
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-13 17:31+0200\n"
+"PO-Revision-Date: 2026-01-14 15:57+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.8\n"
 
 #. /TRANSLATORS: Do not translate app name
-#: src/Windows/Window.vala:16
+#: src/Windows/Window.vala:12
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
-#: src/Windows/Window.vala:27
+#: src/Windows/Window.vala:23
 #, fuzzy
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick"
@@ -40,8 +40,8 @@ msgstr "Klicka för att klistra in en färg om du har en sparad"
 
 #: src/Views/MainView.vala:141
 #, fuzzy
-msgid "Reset history"
-msgstr "Återställ historikens ögonblicksbild"
+msgid "History reset"
+msgstr "Historik sparad"
 
 #: src/Widgets/FormatArea.vala:67
 #, fuzzy
@@ -89,6 +89,10 @@ msgstr "Ögonblicksbild återställd"
 #: src/Application.vala:110
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Välj en färg och kopiera den till urklipp"
+
+#, fuzzy
+#~ msgid "Reset history"
+#~ msgstr "Återställ historikens ögonblicksbild"
 
 #~ msgid "Color palette reset"
 #~ msgstr "Återställning av färgpalett"

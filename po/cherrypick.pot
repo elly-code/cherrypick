@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 16:58+0200\n"
+"POT-Creation-Date: 2026-04-13 17:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. /TRANSLATORS: Do not translate app name
-#: src/Windows/Window.vala:16
+#: src/Windows/Window.vala:12
 msgid "Cherrypick"
 msgstr ""
 
-#: src/Windows/Window.vala:27
+#: src/Windows/Window.vala:23
 msgid "Cherrypick (Devel)"
 msgstr ""
 
@@ -41,7 +41,7 @@ msgid "Click to pick a color on the screen"
 msgstr ""
 
 #: src/Views/MainView.vala:141
-msgid "Reset history"
+msgid "History reset"
 msgstr ""
 
 #: src/Widgets/FormatArea.vala:67
