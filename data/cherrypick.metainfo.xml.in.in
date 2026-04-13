@@ -37,7 +37,7 @@
   <developer id="io.github.elly-code">
     <name>PhoneyBadger + Stella and Charlie</name>
   </developer>
-  <project_group>ellie-commons</project_group>
+  <project_group>elly-code</project_group>
     <url type="homepage">https://github.com/elly-code/cherrypick</url>
     <url type="bugtracker">https://github.com/elly-code/cherrypick/issues</url>
     <url type="help">https://github.com/elly-code/cherrypick/issues</url>
@@ -65,7 +65,7 @@
     </branding>
 
   <releases>
-    <release date="2026-04-14" version="2.4.0">
+    <release date="2026-04-13" version="2.4.0">
       <description>
         <ul>
           <li>Fixed broken translations</li>
