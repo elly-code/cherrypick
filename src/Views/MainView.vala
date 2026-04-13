@@ -138,7 +138,7 @@ class Cherrypick.MainView: Gtk.Box {
         settings.reset (KEY_HISTORY);
         ColorController.get_instance ().load_history_from_gsettings ();
         history_buttons.update_buttons ();
-        on_message (_("Color palette reset"));
+        on_message (_("Reset history"));
     }
 
     public void on_save () {

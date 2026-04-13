@@ -64,12 +64,12 @@ public class Cherrypick.FormatArea : Gtk.Box {
         format_entry.primary_icon_name = "edit-paste-symbolic";
         format_entry.primary_icon_tooltip_markup = Granite.markup_accel_tooltip (
                 {"<Control>V"},
-                _("Click to paste a colour if you have one saved up"));
+                _("Paste colour if available in clipboard"));
 
         format_entry.secondary_icon_name = "edit-copy-symbolic";
         format_entry.secondary_icon_tooltip_markup = Granite.markup_accel_tooltip (
                 {"<Control>C"},
-                _("Click to copy this colour to your clipboard"));
+                _("Copy colour to clipboard"));
 
         var supported_formats = new Gtk.StringList (Cherrypick.Format.all_string ());
 
@@ -95,20 +95,20 @@ public class Cherrypick.FormatArea : Gtk.Box {
             return;
         }
         switch (color_format) {
-            case Format.HEX:    format_entry.text = color.to_hex_string (); break;
-            case Format.RGB:    format_entry.text = color.to_rgb_string (); break;
-            case Format.RGBA:   format_entry.text = color.to_rgba_string (); break;
-            case Format.CMYK:   format_entry.text = color.to_cmyk_string (); break;
-            case Format.HSL:    format_entry.text = color.to_hsl_string (); break;
-            case Format.HSLA:   format_entry.text = color.to_hsla_string (); break;
-            default:            format_entry.text = color.to_rgba_string (); break;
+            case Format.HEX:    format_entry.text = color.to_hex_string (); return;
+            case Format.RGB:    format_entry.text = color.to_rgb_string (); return;
+            case Format.RGBA:   format_entry.text = color.to_rgba_string (); return;
+            case Format.CMYK:   format_entry.text = color.to_cmyk_string (); return;
+            case Format.HSL:    format_entry.text = color.to_hsl_string (); return;
+            case Format.HSLA:   format_entry.text = color.to_hsla_string (); return;
+            default:            format_entry.text = color.to_rgba_string (); return;
         }
     }
 
     public void copy_to_clipboard () {
         var clipboard = Gdk.Display.get_default ().get_clipboard ();
         clipboard.set_text (format_entry.text);
-        this.copied ( _("Copied to clipboard"));
+        copied ( _("Copied to clipboard"));
     }
 
     public void paste_from_clipboard () {

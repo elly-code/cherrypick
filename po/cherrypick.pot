@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 14:58+0200\n"
+"POT-Creation-Date: 2026-04-13 16:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,61 +18,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. /TRANSLATORS: Do not translate app name
-#. We need to hide the title area for the split headerbar
-#: src/Windows/Window.vala:35 src/Windows/Window.vala:52
+#: src/Windows/Window.vala:16
 msgid "Cherrypick"
 msgstr ""
 
+#: src/Windows/Window.vala:27
+msgid "Cherrypick (Devel)"
+msgstr ""
+
 #. ---------------- FORMAT ----------------
-#: src/Views/MainView.vala:36
+#: src/Views/MainView.vala:68
 msgid "Format"
 msgstr ""
 
 #. ---------------- BIG BUTTON ----------------
-#: src/Views/MainView.vala:53
+#: src/Views/MainView.vala:85
 msgid "Pick Color"
 msgstr ""
 
-#: src/Views/MainView.vala:57
+#: src/Views/MainView.vala:89
 msgid "Click to pick a color on the screen"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:68
-msgid "Click to paste a colour if you have one saved up"
+#: src/Views/MainView.vala:141
+msgid "Reset history"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:73
-msgid "Click to copy this colour to your clipboard"
+#: src/Widgets/FormatArea.vala:67
+msgid "Paste colour if available in clipboard"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:78
+#: src/Widgets/FormatArea.vala:72
+msgid "Copy colour to clipboard"
+msgstr ""
+
+#: src/Widgets/FormatArea.vala:77
 msgid "Choose your preferred format to display picked colours"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:112
-msgid "Copied to clipboard!"
+#: src/Widgets/FormatArea.vala:111
+msgid "Copied to clipboard"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:141
+#: src/Widgets/FormatArea.vala:140
 msgid "Cannot detect colour!"
 msgstr ""
 
-#: src/Widgets/HistoryHeader.vala:19
+#: src/Widgets/HistoryHeader.vala:18
 msgid "History"
 msgstr ""
 
-#: src/Widgets/HistoryHeader.vala:28
+#: src/Widgets/HistoryHeader.vala:27
 msgid "Save a snapshot of current color history"
 msgstr ""
 
-#: src/Widgets/HistoryHeader.vala:33
+#: src/Widgets/HistoryHeader.vala:32
 msgid "Restore history snapshot"
 msgstr ""
 
-#: src/Widgets/HistoryHeader.vala:53
+#: src/Widgets/HistoryHeader.vala:54
 msgid "History saved"
 msgstr ""
 
-#: src/Application.vala:114
+#: src/Widgets/HistoryHeader.vala:62
+msgid "Snapshot restored"
+msgstr ""
+
+#: src/Application.vala:110
 msgid "Pick a colour and copy it to clipboard"
 msgstr ""

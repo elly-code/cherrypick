@@ -69,7 +69,9 @@
       <description>
         <ul>
           <li>Fixed broken translations</li>
+          <li>Code housekeeping, and bump to Gnome 50</li>
           <li>Update for german and french</li>
+          <li>Try out Ctrl+S, Ctrl+R ;)</li>
         </ul>
       </description>
     </release>
