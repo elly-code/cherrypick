@@ -1,10 +1,9 @@
 /*
  * SPDX-License-Identifier: GPL-3.0-or-later
  * SPDX-FileCopyrightText:  2022 Adithyan K V <adithyankv@protonmail.com>
- *                          2025 Stella & Charlie (teamcons.carrd.co)
- *                          2025 Contributions from the ellie_Commons community (github.com/ellie-commons/)
+ *                          2025 Contributions from the ellie-Commons community (github.com/ellie-commons/)
+ *                          2025-2026 Stella & Charlie (teamcons.carrd.co)
  */
-
 /**
 * Horizontal box containing a formatted color into string, and a menu to choose preferred format
 */
@@ -22,7 +21,7 @@ public class Cherrypick.FormatArea : Gtk.Box {
     public FormatArea () {
         Object (
             orientation: Gtk.Orientation.HORIZONTAL,
-            spacing: 10
+            spacing: SPACING_DOUBLE
         );
     }
 
@@ -109,7 +108,7 @@ public class Cherrypick.FormatArea : Gtk.Box {
     public void copy_to_clipboard () {
         var clipboard = Gdk.Display.get_default ().get_clipboard ();
         clipboard.set_text (format_entry.text);
-        this.copied ( _("Copied to clipboard!"));
+        this.copied ( _("Copied to clipboard"));
     }
 
     public void paste_from_clipboard () {
@@ -150,13 +149,13 @@ public class Cherrypick.FormatArea : Gtk.Box {
 
     public void load_format_from_gsettings () {
         var settings = Settings.get_instance ();
-        var format = settings.get_enum ("color-format");
+        var format = settings.get_enum (KEY_FORMAT);
         color_format = (Format) format;
         format_selector.selected = color_format;
     }
 
     public void save_format_to_gsettings () {
         var settings = Settings.get_instance ();
-        settings.set_enum ("color-format", color_format);
+        settings.set_enum (KEY_FORMAT, color_format);
     }
 }

@@ -1,6 +1,6 @@
 project('cherrypick', 
 'c', 'vala', 
-version: '2.3.0')
+version: '2.4.0')
 
 app_name = 'Cherrypick'
 correct_app_id = 'io.github.elly_code.' + meson.project_name()
@@ -20,10 +20,13 @@ endif
 app_version = meson.project_version()
 gettext_name = meson.project_name()
 
+i18n = import('i18n')
+gnome = import('gnome')
+
+
 vala_flags = []
 if get_option('development')
   app_id +=  '.devel'
-  name_prefix = '(devel) '
   vcs_tag = run_command('git', 'rev-parse', '--short', 'HEAD').stdout().strip()
   version_suffix = '-@0@'.format (vcs_tag)
   vala_flags += ['--define', 'DEVEL']
@@ -33,21 +36,14 @@ else
   version_suffix = ''
 endif
 
-# Include the translations module
-i18n = import('i18n')
+
+add_project_arguments(vala_flags, language: 'vala')
+
 
 # Set our translation domain
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (gettext_name), language:'c')
 
-# Compile and install custom css file
-gnome = import('gnome')
 
-
-
-
-subdir('src')
-subdir('data')
-subdir('po')
 
 glib_dep = dependency('glib-2.0')
 gtk_dep = dependency('gtk4')
@@ -69,16 +65,9 @@ config_file = configure_file(
     configuration: config_data
 )
 
-
-
-executable(
-    app_id,
-    gresource,
-    config_file,
-    sources: [picker_source_files],
-    dependencies: picker_dependencies,
-    install: true
-)
+subdir('data')
+subdir('po')
+subdir('src')
 
 gnome.post_install(
   glib_compile_schemas: true,

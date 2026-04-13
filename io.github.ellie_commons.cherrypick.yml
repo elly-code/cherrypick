@@ -28,11 +28,13 @@ cleanup:
 modules:
   - name: cherrypick
     buildsystem: meson
+    config-opts:
+      - -Dlegacy-rdnn=true
     sources:
       - type: git
-        url: https://github.com/ellie-commons/cherrypick.git
-        tag: 2.3.0
-        commit: ed215bda8d53d2475597317fb44844a3c35ed325
+        url: https://github.com/elly-code/cherrypick.git
+        tag: 2.4.0
+        commit: 
         x-checker-data:
           type: git
           tag-pattern: '^([\d.]+)$'
