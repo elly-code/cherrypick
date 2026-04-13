@@ -13,17 +13,15 @@ finish-args:
   - '--socket=fallback-x11'
   - '--socket=wayland'
 
-cleanup:
-  -  '/include'
-  -  '/lib/pkgconfig'
-  -  '/man'
-  -  '/share/doc'
-  -  '/share/gtk-doc'
-  -  '/share/man'
-  -  '/share/pkgconfig'
-  -  '/share/installed-tests'
-  -  '*.la'
-  -  '*.a'
+cleanup-commands:
+  - rm -rf /app/bin/sassc
+  - rm -rf /app/include
+  - rm -rf /app/lib/girepository-1.0
+  - rm -rf /app/lib/pkgconfig
+  - rm -rf /app/share/gir-1.0
+  - rm -rf /app/share/vala
+  - rm -rf /app/lib/libgee*
+  - rm -rf /app/lib/libsass*
 
 modules:
   - name: cherrypick
@@ -34,7 +32,7 @@ modules:
       - type: git
         url: https://github.com/elly-code/cherrypick.git
         tag: 2.4.0
-        commit: 
+        commit: 0ed67bc0bc0b3af51b2a2a796c46ef79cfec30e2
         x-checker-data:
           type: git
           tag-pattern: '^([\d.]+)$'
