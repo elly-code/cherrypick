@@ -36,16 +36,6 @@ box-shadow:
     }
 
     construct {
-        /*var headerbar = new Gtk.HeaderBar () {
-            show_title_buttons = false,
-            title_widget = new Gtk.Grid () {visible = false}
-        };
-        headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
-        headerbar.pack_end (new Gtk.WindowControls (Gtk.PackType.END));
-        append (headerbar);  */
-        //append (new Gtk.WindowControls (Gtk.PackType.END));
-
-
         var overlay_color = new Gtk.Overlay () {
             hexpand = true,
             vexpand = true
@@ -54,9 +44,6 @@ box-shadow:
         append (overlay_color);
 
         add_css_class (Granite.STYLE_CLASS_CHECKERBOARD);
-        
-
-
 
         css_provider = new Gtk.CssProvider ();
         Gtk.StyleContext.add_provider_for_display (

@@ -19,12 +19,11 @@ public class Cherrypick.Window : Gtk.ApplicationWindow {
     construct {
         Intl.setlocale ();
 
-
         // We need to hide the title area for the split headerbar
-        set_titlebar (new Gtk.Grid () {visible = false});
+        titlebar = new Gtk.Grid () {visible = false};
+
         var titlelabel = new Gtk.Label (_("Cherrypick"));
         titlelabel.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
-
 
 #if DEVEL
         title = _("Cherrypick (Devel)");
@@ -40,11 +39,9 @@ public class Cherrypick.Window : Gtk.ApplicationWindow {
         //headerbar.pack_start (new Gtk.WindowControls (Gtk.PackType.START));
 
         var main_view = new Cherrypick.MainView ();
-
         var actions = new SimpleActionGroup ();
         actions.add_action_entries (MainView.ACTION_ENTRIES, this);
         insert_action_group ("view", main_view.actions);
-
 
         /* We want the color preview area to span the entire height of the
             window, so using a custom grid layout for the entire window
@@ -59,7 +56,6 @@ public class Cherrypick.Window : Gtk.ApplicationWindow {
         var window_handle = new Gtk.WindowHandle () {
             child = window_grid
         };
-
         child = window_handle;
 
         /* when the app is opened the user probably wants to pick the color

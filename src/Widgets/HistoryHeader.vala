@@ -59,6 +59,6 @@ class Cherrypick.HistoryHeader: Granite.Bin {
         var snapshot = settings.get_strv (KEY_SNAPSHOT);
         settings.set_strv (KEY_HISTORY, snapshot);
         ColorController.get_instance ().load_history_from_gsettings ();
-        on_message (_("Snapshot restored"));
+        on_message (_("History restored"));
     }
 }

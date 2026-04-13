@@ -26,50 +26,19 @@ public class Cherrypick.FormatArea : Gtk.Box {
     }
 
     construct {
-        create_layout ();
-        load_format_from_gsettings ();
-        sync_ui_with_controller ();
-        handle_active_format ();
 
-        notify ["color-format"].connect (save_format_to_gsettings);
-    }
-
-    private void handle_active_format () {
-        notify ["color-format"].connect (update_entry);
-
-        format_selector.notify["selected"].connect (() => {
-            color_format = (Format) format_selector.selected;
-        });
-    }
-
-    private void sync_ui_with_controller () {
-        color_controller = ColorController.get_instance ();
-
-        color_controller.notify ["preview-color"].connect (() => {
-            color = color_controller.preview_color;
-        });
-        notify ["color"].connect (update_entry);
-
-        realize.connect (() => {
-            color = color_controller.preview_color;
-        });
-    }
-
-    private void create_layout () {
         format_entry = new Gtk.Entry () {
             editable = false,
-        };
-
-
-        format_entry.primary_icon_name = "edit-paste-symbolic";
-        format_entry.primary_icon_tooltip_markup = Granite.markup_accel_tooltip (
+            primary_icon_name = "edit-paste-symbolic",
+            primary_icon_tooltip_markup = Granite.markup_accel_tooltip (
                 {"<Control>V"},
-                _("Paste colour if available in clipboard"));
+                _("Paste colour if available in clipboard")),
 
-        format_entry.secondary_icon_name = "edit-copy-symbolic";
-        format_entry.secondary_icon_tooltip_markup = Granite.markup_accel_tooltip (
+            secondary_icon_name = "edit-copy-symbolic",
+            secondary_icon_tooltip_markup = Granite.markup_accel_tooltip (
                 {"<Control>C"},
-                _("Copy colour to clipboard"));
+                _("Copy colour to clipboard"))
+        };
 
         var supported_formats = new Gtk.StringList (Cherrypick.Format.all_string ());
 
@@ -88,6 +57,28 @@ public class Cherrypick.FormatArea : Gtk.Box {
 
         append (format_entry);
         append (format_selector);
+
+        //TODO: This is a bit messy...
+        load_format_from_gsettings ();
+
+        color_controller = ColorController.get_instance ();
+
+        color_controller.notify ["preview-color"].connect (() => {
+            color = color_controller.preview_color;
+        });
+        notify ["color"].connect (update_entry);
+
+        realize.connect (() => {
+            color = color_controller.preview_color;
+        });
+
+        notify ["color-format"].connect (update_entry);
+
+        format_selector.notify["selected"].connect (() => {
+            color_format = (Format) format_selector.selected;
+        });
+
+        notify ["color-format"].connect (save_format_to_gsettings);
     }
 
     private void update_entry () {
@@ -145,7 +136,6 @@ public class Cherrypick.FormatArea : Gtk.Box {
             }
         });
     }
-
 
     public void load_format_from_gsettings () {
         var settings = Settings.get_instance ();

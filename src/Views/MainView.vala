@@ -25,8 +25,6 @@ class Cherrypick.MainView: Gtk.Box {
     public const string ACTION_SAVE = "save";
     public const string ACTION_RESTORE = "restore";
 
-    public static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
-
     public const GLib.ActionEntry[] ACTION_ENTRIES = {
         { ACTION_PICK, on_pick},
         { ACTION_COPY, copy},
@@ -36,17 +34,20 @@ class Cherrypick.MainView: Gtk.Box {
         { ACTION_RESTORE, on_restore},
     };
 
-    construct {
-        // We use a lot of margin_top for each subelement
-        // This way we avoid Le Blank Space caused by overlay eating up spacing
-        orientation = Gtk.Orientation.VERTICAL;
-        spacing = SPACING_STANDARD;
-        vexpand = true;
-        valign = Gtk.Align.START;
-        margin_start = margin_end = SPACING_DOUBLE;
-        margin_top = 0;
-        margin_bottom = SPACING_STANDARD;
+    public MainView () {
+        Object (
+            orientation: Gtk.Orientation.VERTICAL,
+            spacing: SPACING_STANDARD,
+            vexpand: true,
+            valign: Gtk.Align.START,
+            margin_start: SPACING_DOUBLE,
+            margin_end: SPACING_DOUBLE,
+            margin_top: 0,
+            margin_bottom: SPACING_STANDARD
+        );
+    }
 
+    construct {
         actions = new SimpleActionGroup ();
         actions.add_action_entries (ACTION_ENTRIES, this);
 
@@ -60,6 +61,9 @@ class Cherrypick.MainView: Gtk.Box {
 
 
         /* ---------------- TOASTS ---------------- */
+
+        // We use a lot of margin_top for each subelement
+        // This way we avoid Le Blank Space caused by overlay eating up spacing
         toast = new Granite.Toast ("");
         var overlay = new Gtk.Overlay ();
         overlay.add_overlay (toast);
@@ -74,7 +78,6 @@ class Cherrypick.MainView: Gtk.Box {
 
 
         /* ---------------- HISTORY ---------------- */
-
         history_header = new HistoryHeader () {
             margin_top = SPACING_DOUBLE
         };
@@ -112,7 +115,7 @@ class Cherrypick.MainView: Gtk.Box {
         format_area.copied.connect (on_message);
         history_header.on_message.connect (on_message);
 
-        color_picker.picked.connect (format_area.copy_to_clipboard);
+        color_picker.picked.connect (copy);
         pick_button.clicked.connect (on_pick);
     }
 

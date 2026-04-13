@@ -19,13 +19,10 @@ class Cherrypick.HistoryButtons: Gtk.Box {
     }
 
     construct {
-
         color_controller = ColorController.get_instance ();
         color_buttons = new Gee.ArrayList<ColorButton> ();
 
-        color_controller.color_history.changed.connect (() => {
-            update_buttons ();
-        });
+        color_controller.color_history.changed.connect (update_buttons);
 
         for (var i = 0; i < color_controller.color_history.size; i++) {
             var button_name = "color-button-%d".printf (i);
