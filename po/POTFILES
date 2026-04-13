@@ -1,4 +1,5 @@
 src/Windows/Window.vala
+src/Views/MainView.vala
 src/Widgets/FormatArea.vala
 src/Widgets/HistoryHeader.vala
 src/Application.vala

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.github.ellie_commons.cherrypick package.
+# This file is distributed under the same license as the cherrypick package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.ellie_commons.cherrypick\n"
+"Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-26 17:04+0100\n"
+"POT-Creation-Date: 2026-04-13 14:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,27 +19,41 @@ msgstr ""
 
 #. /TRANSLATORS: Do not translate app name
 #. We need to hide the title area for the split headerbar
-#: src/Windows/Window.vala:31 src/Windows/Window.vala:48
+#: src/Windows/Window.vala:35 src/Windows/Window.vala:52
 msgid "Cherrypick"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:66
+#. ---------------- FORMAT ----------------
+#: src/Views/MainView.vala:36
+msgid "Format"
+msgstr ""
+
+#. ---------------- BIG BUTTON ----------------
+#: src/Views/MainView.vala:53
+msgid "Pick Color"
+msgstr ""
+
+#: src/Views/MainView.vala:57
+msgid "Click to pick a color on the screen"
+msgstr ""
+
+#: src/Widgets/FormatArea.vala:68
 msgid "Click to paste a colour if you have one saved up"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:69
+#: src/Widgets/FormatArea.vala:73
 msgid "Click to copy this colour to your clipboard"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:75
+#: src/Widgets/FormatArea.vala:78
 msgid "Choose your preferred format to display picked colours"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:109
+#: src/Widgets/FormatArea.vala:112
 msgid "Copied to clipboard!"
 msgstr ""
 
-#: src/Widgets/FormatArea.vala:138
+#: src/Widgets/FormatArea.vala:141
 msgid "Cannot detect colour!"
 msgstr ""
 
@@ -59,6 +73,6 @@ msgstr ""
 msgid "History saved"
 msgstr ""
 
-#: src/Application.vala:129
+#: src/Application.vala:114
 msgid "Pick a colour and copy it to clipboard"
 msgstr ""

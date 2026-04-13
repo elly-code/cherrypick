@@ -1,11 +1,17 @@
-id: io.github.ellie_commons.cherrypick
+#
+# This is danger
+#
+id: io.github.elly_code.cherrypick.devel
 # elementary SDK is not available on Flathub, so use the elementary BaseApp instead
 base: io.elementary.BaseApp
 base-version: 'circe-25.08'
 runtime: org.gnome.Platform
 runtime-version: '50'
 sdk: org.gnome.Sdk
-command: io.github.ellie_commons.cherrypick
+command: io.github.elly_code.cherrypick.devel
+
+tags: ['devel']
+desktop-file-name-suffix: ' (Development)'
 
 finish-args:
   - '--share=ipc'
@@ -17,7 +23,6 @@ cleanup:
   -  '/include'
   -  '/lib/pkgconfig'
   -  '/man'
-  -  '/share/doc'
   -  '/share/gtk-doc'
   -  '/share/man'
   -  '/share/pkgconfig'
@@ -28,11 +33,8 @@ cleanup:
 modules:
   - name: cherrypick
     buildsystem: meson
+    config-opts:
+      - -Ddevelopment=true
     sources:
-      - type: git
-        url: https://github.com/ellie-commons/cherrypick.git
-        tag: 2.3.0
-        commit: ed215bda8d53d2475597317fb44844a3c35ed325
-        x-checker-data:
-          type: git
-          tag-pattern: '^([\d.]+)$'
+      - type: dir
+        path: .

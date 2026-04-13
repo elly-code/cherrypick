@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.ellie_commons.cherrypick\n"
+"Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-26 17:04+0100\n"
+"POT-Creation-Date: 2026-04-13 14:58+0200\n"
 "PO-Revision-Date: 2022-09-27 20:44+0900\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: none\n"
@@ -15,29 +15,44 @@ msgstr ""
 
 #. /TRANSLATORS: Do not translate app name
 #. We need to hide the title area for the split headerbar
-#: src/Windows/Window.vala:31 src/Windows/Window.vala:48
+#: src/Windows/Window.vala:35 src/Windows/Window.vala:52
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
-#: src/Widgets/FormatArea.vala:66
+#. ---------------- FORMAT ----------------
+#: src/Views/MainView.vala:36
+msgid "Format"
+msgstr "Формат"
+
+#. ---------------- BIG BUTTON ----------------
+#: src/Views/MainView.vala:53
+msgid "Pick Color"
+msgstr "Выбрать цвет"
+
+#: src/Views/MainView.vala:57
+#, fuzzy
+msgid "Click to pick a color on the screen"
+msgstr "Нажмите, чтобы вставить цвет, если он у вас сохранен."
+
+#: src/Widgets/FormatArea.vala:68
 msgid "Click to paste a colour if you have one saved up"
 msgstr "Нажмите, чтобы вставить цвет, если он у вас сохранен."
 
-#: src/Widgets/FormatArea.vala:69
+#: src/Widgets/FormatArea.vala:73
 msgid "Click to copy this colour to your clipboard"
 msgstr "Нажмите, чтобы скопировать этот цвет в буфер обмена"
 
-#: src/Widgets/FormatArea.vala:75
+#: src/Widgets/FormatArea.vala:78
 #, fuzzy
 msgid "Choose your preferred format to display picked colours"
 msgstr "История последних выбранных цветов"
 
-#: src/Widgets/FormatArea.vala:109
+#: src/Widgets/FormatArea.vala:112
 #, fuzzy
 msgid "Copied to clipboard!"
 msgstr "Скопировано в буфер обмена"
 
-#: src/Widgets/FormatArea.vala:138
+#: src/Widgets/FormatArea.vala:141
 msgid "Cannot detect colour!"
 msgstr "Невозможно определить цвет!"
 
@@ -58,16 +73,10 @@ msgstr ""
 msgid "History saved"
 msgstr "История"
 
-#: src/Application.vala:129
+#: src/Application.vala:114
 #, fuzzy
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Сразу же выберите цвет и скопируйте его в буфер обмена"
-
-#~ msgid "Format"
-#~ msgstr "Формат"
-
-#~ msgid "Pick Color"
-#~ msgstr "Выбрать цвет"
 
 #~ msgid ""
 #~ "Allows you to click on a colour on the screen to get its code in the "

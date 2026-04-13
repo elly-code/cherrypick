@@ -25,7 +25,7 @@ public class Cherrypick.Application : Gtk.Application {
 
     public Application () {
         Object (
-            application_id: "io.github.ellie_commons.cherrypick",
+            application_id: APP_ID,
             flags: ApplicationFlags.HANDLES_COMMAND_LINE
         );
     }
@@ -76,7 +76,7 @@ public class Cherrypick.Application : Gtk.Application {
         });
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/github/ellie_commons/cherrypick/Application.css");
+        provider.load_from_resource (APP_PATH + "Application.css");
         Gtk.StyleContext.add_provider_for_display (
             Gdk.Display.get_default (),
             provider,
@@ -110,7 +110,7 @@ public class Cherrypick.Application : Gtk.Application {
     public override int command_line (ApplicationCommandLine command_line) {
         debug ("Parsing commandline arguments");
 
-        OptionEntry[] CMD_OPTION_ENTRIES = {
+        OptionEntry[] cmd_option_entries = {
             {"immediately-pick", 'p', OptionFlags.NONE, OptionArg.NONE, ref is_immediately_pick, _("Pick a colour and copy it to clipboard"), null}
         };
 
@@ -125,7 +125,7 @@ public class Cherrypick.Application : Gtk.Application {
         try {
             var ctx = new OptionContext ();
             ctx.set_help_enabled (true);
-            ctx.add_main_entries (CMD_OPTION_ENTRIES, null);
+            ctx.add_main_entries (cmd_option_entries, null);
             unowned string[] tmp = _args;
             ctx.parse (ref tmp);
 
