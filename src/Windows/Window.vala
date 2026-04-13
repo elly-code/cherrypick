@@ -6,10 +6,6 @@
  */
 public class Cherrypick.Window : Gtk.ApplicationWindow {
 
-    private Cherrypick.MainView main_view;
-
-
-
     public Window () {
         Object (
             ///TRANSLATORS: Do not translate app name
@@ -40,7 +36,7 @@ public class Cherrypick.Window : Gtk.ApplicationWindow {
         //headerbar.show_title_buttons = false;
         //headerbar.pack_start (new Gtk.WindowControls (Gtk.PackType.START));
 
-        main_view = new Cherrypick.MainView ();
+        var main_view = new Cherrypick.MainView ();
 
         var actions = new SimpleActionGroup ();
         actions.add_action_entries (MainView.ACTION_ENTRIES, this);

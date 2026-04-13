@@ -75,7 +75,7 @@ public class Cherrypick.FormatArea : Gtk.Box {
 
         format_selector = new Gtk.DropDown (supported_formats, null) {
             tooltip_text = _("Choose your preferred format to display picked colours"),
-            width_request = 72
+            width_request = 82
         };
 
         format_entry.icon_press.connect ((icon_pos) => {
