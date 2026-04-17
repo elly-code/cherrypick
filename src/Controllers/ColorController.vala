@@ -29,6 +29,8 @@ public class Cherrypick.ColorController : Object {
         return instance;
     }
 
+    private ColorController () {}
+
     construct {
         color_history = new Cherrypick.ColorHistory (HISTORY_SIZE);
 
