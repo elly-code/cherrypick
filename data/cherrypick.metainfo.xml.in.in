@@ -48,13 +48,13 @@
     <screenshot type="default">
       <caption>Cherrypick's main window</caption>
       <image>
-        <image>https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-light.png</image>
+        https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-light.png
       </image>
     </screenshot>
     <screenshot>
       <caption>Main window with dark theme</caption>
       <image>
-        <image>https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-dark.png</image>
+        https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-dark.png
       </image>
     </screenshot>
   </screenshots>
