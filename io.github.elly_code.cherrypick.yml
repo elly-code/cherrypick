@@ -11,15 +11,11 @@ finish-args:
   - '--socket=wayland'
 
 cleanup:
-  -  '/include'
-  -  '/lib/pkgconfig'
-  -  '/man'
-  -  '/share/gtk-doc'
-  -  '/share/man'
-  -  '/share/pkgconfig'
-  -  '/share/installed-tests'
-  -  '*.la'
-  -  '*.a'
+  - /include
+  - /lib/girepository-1.0
+  - /lib/pkgconfig
+  - /share/gir-1.0
+  - /share/vala
 
 modules:
   - name: cherrypick
