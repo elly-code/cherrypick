@@ -4,6 +4,7 @@
  *                          2025 Contributions from the ellie-Commons community (github.com/ellie-commons/)
  *                          2025-2026 Stella & Charlie (teamcons.carrd.co)
  */
+
 public class Cherrypick.Window : Gtk.ApplicationWindow {
 
     public Window () {

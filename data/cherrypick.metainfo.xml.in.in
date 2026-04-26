@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>@APP_ID@</id>
-  <name>@APP_NAME@</name>
+  <name>Cherrypick</name>
   <summary>Pick colors on your screen</summary>
   <launchable type="desktop-id">@APP_ID@.desktop</launchable>
   <metadata_license>CC-BY-4.0</metadata_license>
@@ -38,23 +38,23 @@
     <name>PhoneyBadger + Stella and Charlie</name>
   </developer>
   <project_group>elly-code</project_group>
-    <url type="homepage">https://github.com/elly-code/cherrypick</url>
-    <url type="bugtracker">https://github.com/elly-code/cherrypick/issues</url>
-    <url type="help">https://github.com/elly-code/cherrypick/issues</url>
+    <url type="homepage">https://github.com/elly-code/@APP_NAME@</url>
+    <url type="bugtracker">https://github.com/elly-code/@APP_NAME@/issues</url>
+    <url type="help">https://github.com/elly-code/@APP_NAME@/issues</url>
     <url type="donation">https://ko-fi.com/teamcons/tip</url>
-    <url type="vcs-browser">https://github.com/elly-code/cherrypick</url>
+    <url type="vcs-browser">https://github.com/elly-code/@APP_NAME@</url>
 
   <screenshots>
     <screenshot type="default">
       <caption>Cherrypick's main window</caption>
       <image>
-        https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-light.png
+        https://raw.githubusercontent.com/elly-code/@APP_NAME@/@APP_VERSION@/data/screenshots/window-light.png
       </image>
     </screenshot>
     <screenshot>
       <caption>Main window with dark theme</caption>
       <image>
-        https://raw.githubusercontent.com/elly-code/cherrypick/@APP_VERSION@/data/screenshots/window-dark.png
+        https://raw.githubusercontent.com/elly-code/@APP_NAME@/@APP_VERSION@/data/screenshots/window-dark.png
       </image>
     </screenshot>
   </screenshots>
@@ -99,7 +99,7 @@
         </ul>
       </description>
       <issues>
-        <issue url="https://github.com/elly-code/cherrypick/issues/21">Fix alpha not being restored properly</issue>
+        <issue url="https://github.com/elly-code/@APP_NAME@/issues/21">Fix alpha not being restored properly</issue>
       </issues>
     </release>
     <release date="2025-09-13" version="2.1.2">
