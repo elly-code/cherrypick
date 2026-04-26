@@ -1,18 +1,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: it\n"
-"Language-Team: Italian <LL@li.org>\n"
-"Last-Translator: Albano Battistella <albanobattistella@gmail.com>\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2025-12-28 10:12+0100\n"
-"POT-Creation-Date: 2026-04-13 16:52+0200\n"
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 23:50+0200\n"
+"PO-Revision-Date: 2025-12-28 10:12+0100\n"
+"Last-Translator: Albano Battistella <albanobattistella@gmail.com>\n"
+"Language-Team: Italian <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: data/cherrypick.desktop.in.in:5
+#: data/cherrypick.desktop.in.in:5 data/cherrypick.metainfo.xml.in.in:4
 msgid "Cherrypick"
 msgstr "Cherrypick"
 
@@ -20,8 +20,7 @@ msgstr "Cherrypick"
 msgid "Color Picker"
 msgstr "Selettore Colore"
 
-#: data/cherrypick.desktop.in.in:7
-#: data/cherrypick.metainfo.xml.in.in:5
+#: data/cherrypick.desktop.in.in:7 data/cherrypick.metainfo.xml.in.in:5
 msgid "Pick colors on your screen"
 msgstr "Seleziona colori sullo schermo"
 
@@ -32,10 +31,6 @@ msgstr "Colore;Seleziona;Contagocce;Selettore;"
 #: data/cherrypick.desktop.in.in:18
 msgid "Pick a color"
 msgstr "Seleziona un colore"
-
-#: data/cherrypick.metainfo.xml.in.in:4
-msgid "@APP_NAME@"
-msgstr "@NOME_APP@"
 
 #: data/cherrypick.metainfo.xml.in.in:11
 msgid "A modern and trusty color picker"
@@ -54,16 +49,23 @@ msgid "Remembers your preferred format"
 msgstr "Ricorda il tuo formato preferito"
 
 #: data/cherrypick.metainfo.xml.in.in:16
-msgid "Color history remembers your last picked colors (hover to check their code)"
-msgstr "La cronologia colori ricorda gli ultimi colori selezionati (passa sopra con il mouse per vedere il loro codice)"
+msgid ""
+"Color history remembers your last picked colors (hover to check their code)"
+msgstr ""
+"La cronologia colori ricorda gli ultimi colori selezionati (passa sopra con "
+"il mouse per vedere il loro codice)"
 
 #: data/cherrypick.metainfo.xml.in.in:17
 msgid "Curious about a color? Copy paste it from your clipboard to preview it"
-msgstr "Sei curioso di un colore? Copia e incollalo dalla clipboard per visualizzarlo in anteprima"
+msgstr ""
+"Sei curioso di un colore? Copia e incollalo dalla clipboard per "
+"visualizzarlo in anteprima"
 
 #: data/cherrypick.metainfo.xml.in.in:18
 msgid "You can set a keybind to immediately pick and copy to clipboard!"
-msgstr "Puoi impostare un tasto di scelta rapida per selezionare e copiare immediatamente negli appunti!"
+msgstr ""
+"Puoi impostare un tasto di scelta rapida per selezionare e copiare "
+"immediatamente negli appunti!"
 
 #: data/cherrypick.metainfo.xml.in.in:38
 #, fuzzy
@@ -100,7 +102,8 @@ msgstr "Cambiamento organizzativo"
 
 #: data/cherrypick.metainfo.xml.in.in:82
 msgid "Show a pasted color has alpha by displaying a checkerboard"
-msgstr "Mostra che un colore incollato ha l'alfa, visualizzando una scacchiera."
+msgstr ""
+"Mostra che un colore incollato ha l'alfa, visualizzando una scacchiera."
 
 #: data/cherrypick.metainfo.xml.in.in:83
 msgid "Italian translation thanks to @albanobattistella!"
@@ -119,8 +122,11 @@ msgid "All a glance: Preview tooltip shows all formats"
 msgstr "Tutto a colpo d'occhio: il tooltip di anteprima mostra tutti i formati"
 
 #: data/cherrypick.metainfo.xml.in.in:108
-msgid "Fix regression: Allow --immediately-pick when the window is already open"
-msgstr "Correzione regressione: Permetti --immediately-pick quando la finestra è già aperta"
+msgid ""
+"Fix regression: Allow --immediately-pick when the window is already open"
+msgstr ""
+"Correzione regressione: Permetti --immediately-pick quando la finestra è già "
+"aperta"
 
 #: data/cherrypick.metainfo.xml.in.in:109
 msgid "Not sure how to fix yet: the crosshair doesnt show..."
@@ -140,15 +146,22 @@ msgstr "L'app ora funziona su ARM grazie a @ryonakano!"
 
 #: data/cherrypick.metainfo.xml.in.in:125
 msgid "Add the ability to immediately pick and copy to clipboard"
-msgstr "Aggiungi la possibilità di selezionare e copiare immediatamente negli appunti"
+msgstr ""
+"Aggiungi la possibilità di selezionare e copiare immediatamente negli appunti"
 
 #: data/cherrypick.metainfo.xml.in.in:126
 msgid "You can right-click on app icon and choose \"Immediately pick\""
-msgstr "Puoi fare clic con il tasto destro sull'icona dell'app e scegliere \"Seleziona immediatamente\""
+msgstr ""
+"Puoi fare clic con il tasto destro sull'icona dell'app e scegliere "
+"\"Seleziona immediatamente\""
 
 #: data/cherrypick.metainfo.xml.in.in:127
-msgid "Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-pick\""
-msgstr "Oppure imposta un tasto di scelta rapida a \"flatpak run io.ellie_commons.cherrypick --immediately-pick\""
+msgid ""
+"Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-"
+"pick\""
+msgstr ""
+"Oppure imposta un tasto di scelta rapida a \"flatpak run io.ellie_commons."
+"cherrypick --immediately-pick\""
 
 #: data/cherrypick.metainfo.xml.in.in:128
 msgid "Updated deprecated widgets"
@@ -167,12 +180,19 @@ msgid "2.0.0: The revival!"
 msgstr "2.0.0: Il ritorno!"
 
 #: data/cherrypick.metainfo.xml.in.in:142
-msgid "A new name, Cherrypick! Blessed by @adithyankv, the OG author. Thank you!"
-msgstr "Un nuovo nome, Cherrypick! Benedetto da @adithyankv, l'autore originale. Grazie!"
+msgid ""
+"A new name, Cherrypick! Blessed by @adithyankv, the OG author. Thank you!"
+msgstr ""
+"Un nuovo nome, Cherrypick! Benedetto da @adithyankv, l'autore originale. "
+"Grazie!"
 
 #: data/cherrypick.metainfo.xml.in.in:143
-msgid "Port to modern tech (GTK4, Wayland, portals, elementary 8). Not broken anymore!"
-msgstr "Porting a tecnologia moderna (GTK4, Wayland, portali, elementary 8). Non più rotto!"
+msgid ""
+"Port to modern tech (GTK4, Wayland, portals, elementary 8). Not broken "
+"anymore!"
+msgstr ""
+"Porting a tecnologia moderna (GTK4, Wayland, portali, elementary 8). Non più "
+"rotto!"
 
 #: data/cherrypick.metainfo.xml.in.in:144
 msgid "CMYK model available thanks to @DSLitvinov"
@@ -188,20 +208,32 @@ msgstr "A quanto pare anche HSLA esiste, quindi l'ho aggiunto"
 
 #: data/cherrypick.metainfo.xml.in.in:147
 msgid "New feature: You can now paste a color from clipboard to preview it"
-msgstr "Nuova funzionalità: ora puoi incollare un colore dalla clipboard per visualizzarlo in anteprima"
+msgstr ""
+"Nuova funzionalità: ora puoi incollare un colore dalla clipboard per "
+"visualizzarlo in anteprima"
 
 #: data/cherrypick.metainfo.xml.in.in:148
-msgid "New feature: Hover over history buttons to see their code in your preferred format"
-msgstr "Nuova funzionalità: passa con il mouse sopra i pulsanti della cronologia per vedere il loro codice nel tuo formato preferito"
+msgid ""
+"New feature: Hover over history buttons to see their code in your preferred "
+"format"
+msgstr ""
+"Nuova funzionalità: passa con il mouse sopra i pulsanti della cronologia per "
+"vedere il loro codice nel tuo formato preferito"
+
+#~ msgid "@APP_NAME@"
+#~ msgstr "@NOME_APP@"
 
 #~ msgid "Add command line flag to open directly in color picking mode"
-#~ msgstr "Aggiungi flag della riga di comando per aprire direttamente in modalità di selezione colore"
+#~ msgstr ""
+#~ "Aggiungi flag della riga di comando per aprire direttamente in modalità "
+#~ "di selezione colore"
 
 #~ msgid "Fix layout bug when opening multiple instances"
 #~ msgstr "Correzione bug di layout all'apertura di più istanze"
 
 #~ msgid "Make pick color button the default focused widget"
-#~ msgstr "Rendi il pulsante di selezione colore il widget predefinito con focus"
+#~ msgstr ""
+#~ "Rendi il pulsante di selezione colore il widget predefinito con focus"
 
 #~ msgid "Remove payment option from appcenter"
 #~ msgstr "Rimuovi l'opzione di pagamento da AppCenter"

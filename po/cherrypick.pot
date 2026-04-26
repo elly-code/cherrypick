@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 21:02+0200\n"
+"POT-Creation-Date: 2026-04-26 23:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #. /TRANSLATORS: Do not translate app name
 #. We need to hide the title area for the split headerbar
-#: src/Windows/Window.vala:12 src/Windows/Window.vala:25
+#: src/Windows/Window.vala:13 src/Windows/Window.vala:26
 msgid "Cherrypick"
 msgstr ""
 
-#: src/Windows/Window.vala:29 src/Windows/Window.vala:30
+#: src/Windows/Window.vala:30 src/Windows/Window.vala:31
 msgid "Cherrypick (Devel)"
 msgstr ""
 
