@@ -1,0 +1,206 @@
+# Croatian translation for cherrypick-extra.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the cherrypick-extra package.
+# Milo Ivir <mail@milotype.de>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 23:50+0200\n"
+"PO-Revision-Date: 2026-05-11 11:33+0200\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: data/cherrypick.desktop.in.in:5 data/cherrypick.metainfo.xml.in.in:4
+msgid "Cherrypick"
+msgstr "Cherrypick"
+
+#: data/cherrypick.desktop.in.in:6
+msgid "Color Picker"
+msgstr "Birač boja"
+
+#: data/cherrypick.desktop.in.in:7 data/cherrypick.metainfo.xml.in.in:5
+msgid "Pick colors on your screen"
+msgstr "Odaberi boju na ekranu"
+
+#: data/cherrypick.desktop.in.in:14
+msgid "Color;Pick;Eyedropper;Picker;"
+msgstr "Boja;Odaberi;Kapaljka;Birač;"
+
+#: data/cherrypick.desktop.in.in:18
+msgid "Pick a color"
+msgstr "Odaberi boju"
+
+#: data/cherrypick.metainfo.xml.in.in:11
+msgid "A modern and trusty color picker"
+msgstr "Moderan i pouzdan birač boja"
+
+#: data/cherrypick.metainfo.xml.in.in:12
+msgid "Features:"
+msgstr "Funkcije:"
+
+#: data/cherrypick.metainfo.xml.in.in:14
+msgid "Choose different output formats (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
+msgstr "Odaberi različite izlazne formate (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
+
+#: data/cherrypick.metainfo.xml.in.in:15
+msgid "Remembers your preferred format"
+msgstr "Pamti tvoj preferirani format"
+
+#: data/cherrypick.metainfo.xml.in.in:16
+msgid ""
+"Color history remembers your last picked colors (hover to check their code)"
+msgstr ""
+"Povijest boja pamti tvoje zadnje odabrane boje (zadrži miša nad bojom za "
+"prikaz njenog koda)"
+
+#: data/cherrypick.metainfo.xml.in.in:17
+msgid "Curious about a color? Copy paste it from your clipboard to preview it"
+msgstr ""
+"Zanima te boja? Kopiraj je i zalijepi iz međuspremnika te je pregledaj"
+
+#: data/cherrypick.metainfo.xml.in.in:18
+msgid "You can set a keybind to immediately pick and copy to clipboard!"
+msgstr "Možeš postaviti tipkovnicu da odmah odabere i kopira u međuspremnik!"
+
+#: data/cherrypick.metainfo.xml.in.in:38
+msgid "PhoneyBadger + Stella and Charlie"
+msgstr "PhoneyBadger + Stella i Charlie"
+
+#: data/cherrypick.metainfo.xml.in.in:49
+msgid "Cherrypick's main window"
+msgstr "Glavni prozor aplikacije Cherrypick"
+
+#: data/cherrypick.metainfo.xml.in.in:55
+msgid "Main window with dark theme"
+msgstr "Glavni prozor s tamnom temom"
+
+#: data/cherrypick.metainfo.xml.in.in:71
+msgid "Fixed broken translations"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:72
+msgid "Code housekeeping, and bump to Gnome 50"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:73
+msgid "Update for german and french"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:74
+msgid "Try out Ctrl+S, Ctrl+R ;)"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:81
+msgid "Organization change"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:82
+msgid "Show a pasted color has alpha by displaying a checkerboard"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:83
+msgid "Italian translation thanks to @albanobattistella!"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:90
+msgid "Prevent Cherrypick from lingering in the background"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:97
+msgid "Change branding colors to a nice cherry"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:98
+msgid "All a glance: Preview tooltip shows all formats"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:108
+msgid ""
+"Fix regression: Allow --immediately-pick when the window is already open"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:109
+msgid "Not sure how to fix yet: the crosshair doesnt show..."
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:116
+msgid "Clean appdata for flathub release"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:117
+msgid "Make sure the app doesnt crash at startup for flathub builds"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:124
+msgid "App now works on ARM thanks to @ryonakano!"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:125
+msgid "Add the ability to immediately pick and copy to clipboard"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:126
+msgid "You can right-click on app icon and choose \"Immediately pick\""
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:127
+msgid ""
+"Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --immediately-"
+"pick\""
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:128
+msgid "Updated deprecated widgets"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:129
+msgid "Minute tweaks by @ryonakano thanks again!"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:135
+msgid "Remove minor artifacts"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:140
+msgid "2.0.0: The revival!"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:142
+msgid ""
+"A new name, Cherrypick! Blessed by @adithyankv, the OG author. Thank you!"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:143
+msgid ""
+"Port to modern tech (GTK4, Wayland, portals, elementary 8). Not broken "
+"anymore!"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:144
+msgid "CMYK model available thanks to @DSLitvinov"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:145
+msgid "HSL model available thanks to @ckruse's work on ColorMate"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:146
+msgid "Also apparently HSLA is a thing so i added it"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:147
+msgid "New feature: You can now paste a color from clipboard to preview it"
+msgstr ""
+
+#: data/cherrypick.metainfo.xml.in.in:148
+msgid ""
+"New feature: Hover over history buttons to see their code in your preferred "
+"format"
+msgstr ""
