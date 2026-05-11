@@ -1,0 +1,90 @@
+# Croatian translation for cherrypick.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the cherrypick package.
+# Milo Ivir <mail@milotype.de>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cherrypick\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 23:50+0200\n"
+"PO-Revision-Date: 2026-05-11 11:24+0200\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#. /TRANSLATORS: Do not translate app name
+#. We need to hide the title area for the split headerbar
+#: src/Windows/Window.vala:13 src/Windows/Window.vala:26
+msgid "Cherrypick"
+msgstr "Cherrypick"
+
+#: src/Windows/Window.vala:30 src/Windows/Window.vala:31
+msgid "Cherrypick (Devel)"
+msgstr "Cherrypick (Devel)"
+
+#. ---------------- FORMAT ----------------
+#: src/Views/MainView.vala:72
+msgid "Format"
+msgstr "Format"
+
+#. ---------------- BIG BUTTON ----------------
+#: src/Views/MainView.vala:88
+msgid "Pick Color"
+msgstr "Odaberi boju"
+
+#: src/Views/MainView.vala:92
+msgid "Click to pick a color on the screen"
+msgstr "Klikni i odaberi boju s ekrana"
+
+#: src/Views/MainView.vala:144
+msgid "History reset"
+msgstr "Resetiraj povijesti"
+
+#: src/Widgets/FormatArea.vala:35
+msgid "Paste colour if available in clipboard"
+msgstr "Zalijepi boju ako je dostupna u međuspremniku"
+
+#: src/Widgets/FormatArea.vala:40
+msgid "Copy colour to clipboard"
+msgstr "Kopiraj boju u međuspremnik"
+
+#: src/Widgets/FormatArea.vala:46
+msgid "Choose your preferred format to display picked colours"
+msgstr "Odaberi željeni format za prikaz odabranih boja"
+
+#: src/Widgets/FormatArea.vala:102
+msgid "Copied to clipboard"
+msgstr "Kopirano u međuspremnik"
+
+#: src/Widgets/FormatArea.vala:131
+msgid "Cannot detect colour!"
+msgstr "Ne mogu otkriti boju!"
+
+#: src/Widgets/HistoryHeader.vala:18
+msgid "History"
+msgstr "Povijest"
+
+#: src/Widgets/HistoryHeader.vala:27
+msgid "Save a snapshot of current color history"
+msgstr "Spremi snimku trenutačne povijesti boja"
+
+#: src/Widgets/HistoryHeader.vala:32
+msgid "Restore history snapshot"
+msgstr "Obnovi snimku povijesti"
+
+#: src/Widgets/HistoryHeader.vala:54
+msgid "History saved"
+msgstr "Povijest je spremljena"
+
+#: src/Widgets/HistoryHeader.vala:62
+msgid "History restored"
+msgstr "Povijest je obnovljena"
+
+#: src/Application.vala:110
+msgid "Pick a colour and copy it to clipboard"
+msgstr "Odaberi boju i kopiraj je u međuspremnik"
