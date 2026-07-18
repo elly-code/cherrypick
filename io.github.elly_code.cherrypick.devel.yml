@@ -23,6 +23,7 @@ modules:
   - name: cherrypick
     buildsystem: meson
     config-opts:
+      - --buildtype=debug
       - -Ddevelopment=true
     sources:
       - type: dir

@@ -28,6 +28,7 @@ modules:
   - name: cherrypick
     buildsystem: meson
     config-opts:
+      - --buildtype=release
       - -Dlegacy-rdnn=true
     sources:
       - type: git
