@@ -28,42 +28,40 @@
       <id>@ALTERNATE_ID@</id>
   </replaces>
 
-  <content_rating type="oars-1.1"/>
 
+  <content_rating type="oars-1.1"/>
+  <branding>
+    <color type="primary" scheme_preference="light">#c6262e</color>
+    <color type="primary" scheme_preference="dark">#7a0000</color>
+  </branding>
   <recommends>
     <control>pointing</control>
     <control>touch</control>
   </recommends>
-
-  <developer id="io.github.elly-code">
-    <name>PhoneyBadger + Stella and Charlie</name>
-  </developer>
-  <project_group>elly-code</project_group>
-    <url type="homepage">https://github.com/elly-code/@APP_NAME@</url>
-    <url type="bugtracker">https://github.com/elly-code/@APP_NAME@/issues</url>
-    <url type="help">https://github.com/elly-code/@APP_NAME@/issues</url>
-    <url type="donation">https://ko-fi.com/teamcons/tip</url>
-    <url type="vcs-browser">https://github.com/elly-code/@APP_NAME@</url>
-
   <screenshots>
     <screenshot type="default">
       <caption>Cherrypick's main window</caption>
       <image>
-        https://raw.githubusercontent.com/elly-code/@APP_NAME@/@APP_VERSION@/data/screenshots/window-light.png
+        https://raw.githubusercontent.com/@PUBLISHER@/@APP_NAME@/@APP_VERSION@/data/screenshots/window-light.png
       </image>
     </screenshot>
     <screenshot>
       <caption>Main window with dark theme</caption>
       <image>
-        https://raw.githubusercontent.com/elly-code/@APP_NAME@/@APP_VERSION@/data/screenshots/window-dark.png
+        https://raw.githubusercontent.com/@PUBLISHER@/@APP_NAME@/@APP_VERSION@/data/screenshots/window-dark.png
       </image>
     </screenshot>
   </screenshots>
 
-    <branding>
-      <color type="primary" scheme_preference="light">#c6262e</color>
-      <color type="primary" scheme_preference="dark">#7a0000</color>
-    </branding>
+  <developer id="io.github.elly-code">
+    <name>PhoneyBadger + Stella and Charlie</name>
+  </developer>
+  <project_group>elly-code</project_group>
+  <url type="homepage">https://github.com/@PUBLISHER@/@APP_NAME@</url>
+  <url type="bugtracker">https://github.com/@PUBLISHER@/@APP_NAME@/issues</url>
+  <url type="help">https://github.com/@PUBLISHER@/@APP_NAME@/issues</url>
+  <url type="donation">https://ko-fi.com/teamcons/tip</url>
+  <url type="vcs-browser">https://github.com/@PUBLISHER@/@APP_NAME@</url>
 
   <releases>
     <release date="2026-04-13" version="2.4.0">
