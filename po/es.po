@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 23:50+0200\n"
+"POT-Creation-Date: 2026-07-26 00:50+0200\n"
 "PO-Revision-Date: 2022-05-29 02:15+0530\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -12,8 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. /TRANSLATORS: Do not translate app name
-#. We need to hide the title area for the split headerbar
+#. TRANSLATORS: Do not translate app name
 #: src/Windows/Window.vala:13 src/Windows/Window.vala:26
 msgid "Cherrypick"
 msgstr "Cherrypick"
@@ -23,12 +22,10 @@ msgstr "Cherrypick"
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick"
 
-#. ---------------- FORMAT ----------------
 #: src/Views/MainView.vala:72
 msgid "Format"
 msgstr "Formato"
 
-#. ---------------- BIG BUTTON ----------------
 #: src/Views/MainView.vala:88
 msgid "Pick Color"
 msgstr "Elegir color"
@@ -90,6 +87,176 @@ msgstr "Historia guardada"
 #: src/Application.vala:110
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Elige un color y cópialo en el portapapeles"
+
+#~ msgid "Color Picker"
+#~ msgstr "Selector de color"
+
+#, fuzzy
+#~ msgid "Pick colors on your screen"
+#~ msgstr "Elige los colores de los píxeles de tu pantalla"
+
+#~ msgid "Color;Pick;Eyedropper;Picker;"
+#~ msgstr "Color;Pick;Cuentagotas;Picker;"
+
+#, fuzzy
+#~ msgid "Pick a color"
+#~ msgstr "Elige cualquier color"
+
+#~ msgid "A modern and trusty color picker"
+#~ msgstr "Un selector de color moderno y fiable"
+
+#~ msgid "Features:"
+#~ msgstr "Características:"
+
+#~ msgid "Choose different output formats (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
+#~ msgstr ""
+#~ "Elija diferentes formatos de salida (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
+
+#~ msgid "Remembers your preferred format"
+#~ msgstr "Recuerda tu formato preferido"
+
+#~ msgid ""
+#~ "Color history remembers your last picked colors (hover to check their "
+#~ "code)"
+#~ msgstr ""
+#~ "El historial de colores recuerda los últimos colores elegidos (pasa el "
+#~ "ratón por encima para comprobar su código)"
+
+#~ msgid ""
+#~ "Curious about a color? Copy paste it from your clipboard to preview it"
+#~ msgstr ""
+#~ "¿Tienes curiosidad por un color? Cópielo y péguelo desde el portapapeles "
+#~ "para obtener una vista previa."
+
+#~ msgid "You can set a keybind to immediately pick and copy to clipboard!"
+#~ msgstr ""
+#~ "Puedes establecer una combinación de teclas para seleccionar y copiar "
+#~ "inmediatamente en el portapapeles."
+
+#, fuzzy
+#~ msgid "PhoneyBadger + Stella and Charlie"
+#~ msgstr "PhoneyBadger + Stella"
+
+#~ msgid "Cherrypick's main window"
+#~ msgstr "Ventana principal de Cherrypick"
+
+#~ msgid "Main window with dark theme"
+#~ msgstr "Ventana principal con tema oscuro"
+
+#~ msgid "Fixed broken translations"
+#~ msgstr "Corregidas las traducciones rotas"
+
+#~ msgid "Code housekeeping, and bump to Gnome 50"
+#~ msgstr "Limpieza de código y actualización a Gnome 50"
+
+#~ msgid "Update for german and french"
+#~ msgstr "Actualización para alemán y francés"
+
+#~ msgid "Try out Ctrl+S, Ctrl+R ;)"
+#~ msgstr "Prueba Ctrl+S, Ctrl+R ;)"
+
+#~ msgid "Organization change"
+#~ msgstr "Cambio organizativo"
+
+#~ msgid "Show a pasted color has alpha by displaying a checkerboard"
+#~ msgstr "Mostrar un color pegado tiene alfa mostrando un tablero de ajedrez"
+
+#~ msgid "Italian translation thanks to @albanobattistella!"
+#~ msgstr "¡Traducción al italiano gracias a @albanobattistella!"
+
+#~ msgid "Prevent Cherrypick from lingering in the background"
+#~ msgstr "Evitar que Cherrypick permanezca en segundo plano"
+
+#~ msgid "Change branding colors to a nice cherry"
+#~ msgstr "Cambia los colores de la marca a un bonito cereza"
+
+#~ msgid "All a glance: Preview tooltip shows all formats"
+#~ msgstr ""
+#~ "Todo de un vistazo: La información sobre herramientas de previsualización "
+#~ "muestra todos los formatos"
+
+#~ msgid ""
+#~ "Fix regression: Allow --immediately-pick when the window is already open"
+#~ msgstr ""
+#~ "Corregir regresión: Permitir --immediately-pick cuando la ventana ya está "
+#~ "abierta"
+
+#~ msgid "Not sure how to fix yet: the crosshair doesnt show..."
+#~ msgstr "Aún no sé cómo solucionarlo: la retícula no aparece..."
+
+#~ msgid "Clean appdata for flathub release"
+#~ msgstr "Limpiar appdata para la liberación de flathub"
+
+#~ msgid "Make sure the app doesnt crash at startup for flathub builds"
+#~ msgstr ""
+#~ "Asegúrese de que la aplicación no se bloquee en el inicio de flathub "
+#~ "construye"
+
+#~ msgid "App now works on ARM thanks to @ryonakano!"
+#~ msgstr "¡La aplicación ya funciona en ARM gracias a @ryonakano!"
+
+#~ msgid "Add the ability to immediately pick and copy to clipboard"
+#~ msgstr ""
+#~ "Añade la posibilidad de seleccionar y copiar inmediatamente en el "
+#~ "portapapeles"
+
+#~ msgid "You can right-click on app icon and choose \"Immediately pick\""
+#~ msgstr ""
+#~ "Puedes hacer clic con el botón derecho en el icono de la aplicación y "
+#~ "elegir \"Elegir inmediatamente\"."
+
+#~ msgid ""
+#~ "Or set a keybind to \"flatpak run io.ellie_commons.cherrypick --"
+#~ "immediately-pick\""
+#~ msgstr ""
+#~ "O establece un keybind a \"flatpak run io.ellie_commons.cherrypick --"
+#~ "immediately-pick\""
+
+#~ msgid "Updated deprecated widgets"
+#~ msgstr "Widgets obsoletos actualizados"
+
+#~ msgid "Minute tweaks by @ryonakano thanks again!"
+#~ msgstr "Pequeños retoques de @ryonakano ¡Gracias de nuevo!"
+
+#~ msgid "Remove minor artifacts"
+#~ msgstr "Eliminar artefactos menores"
+
+#~ msgid "2.0.0: The revival!"
+#~ msgstr "2.0.0: ¡El renacimiento!"
+
+#~ msgid ""
+#~ "A new name, Cherrypick! Blessed by @adithyankv, the OG author. Thank you!"
+#~ msgstr ""
+#~ "Un nuevo nombre, ¡Cherrypick! Bendecido por @adithyankv, el autor OG. "
+#~ "Gracias."
+
+#~ msgid ""
+#~ "Port to modern tech (GTK4, Wayland, portals, elementary 8). Not broken "
+#~ "anymore!"
+#~ msgstr ""
+#~ "Adaptación a la tecnología moderna (GTK4, Wayland, portales, elementary "
+#~ "8). ¡Ya no está roto!"
+
+#~ msgid "CMYK model available thanks to @DSLitvinov"
+#~ msgstr "Modelo CMYK disponible gracias a @DSLitvinov"
+
+#~ msgid "HSL model available thanks to @ckruse's work on ColorMate"
+#~ msgstr "Modelo HSL disponible gracias al trabajo de @ckruse en ColorMate"
+
+#~ msgid "Also apparently HSLA is a thing so i added it"
+#~ msgstr "También al parecer HSLA es una cosa así que lo añadí"
+
+#~ msgid "New feature: You can now paste a color from clipboard to preview it"
+#~ msgstr ""
+#~ "Nueva función: Ahora puedes pegar un color desde el portapapeles para "
+#~ "previsualizarlo"
+
+#~ msgid ""
+#~ "New feature: Hover over history buttons to see their code in your "
+#~ "preferred format"
+#~ msgstr ""
+#~ "Nueva función: Pasa el ratón por encima de los botones del historial para "
+#~ "ver su código en el formato que prefieras."
 
 #~ msgid "Snapshot restored"
 #~ msgstr "Instantánea restaurada"

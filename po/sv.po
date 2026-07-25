@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 23:50+0200\n"
+"POT-Creation-Date: 2026-07-26 00:50+0200\n"
 "PO-Revision-Date: 2026-01-14 15:57+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: \n"
@@ -13,8 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.8\n"
 
-#. /TRANSLATORS: Do not translate app name
-#. We need to hide the title area for the split headerbar
+#. TRANSLATORS: Do not translate app name
 #: src/Windows/Window.vala:13 src/Windows/Window.vala:26
 msgid "Cherrypick"
 msgstr "Cherrypick"
@@ -24,12 +23,10 @@ msgstr "Cherrypick"
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick"
 
-#. ---------------- FORMAT ----------------
 #: src/Views/MainView.vala:72
 msgid "Format"
 msgstr "Format"
 
-#. ---------------- BIG BUTTON ----------------
 #: src/Views/MainView.vala:88
 msgid "Pick Color"
 msgstr "Välj färg"

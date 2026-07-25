@@ -28,7 +28,7 @@
   </replaces>
 
   <content_rating type="oars-1.1"/>
-  <translation type="gettext">@GETTEXT_PACKAGE@</translation>
+  <translation type="gettext">@APP_ID@</translation>
   <recommends>
     <control>pointing</control>
     <control>touch</control>

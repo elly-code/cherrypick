@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherrypick\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 23:50+0200\n"
+"POT-Creation-Date: 2026-07-26 00:50+0200\n"
 "PO-Revision-Date: 2026-05-11 11:24+0200\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: \n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.9\n"
 
-#. /TRANSLATORS: Do not translate app name
-#. We need to hide the title area for the split headerbar
+#. TRANSLATORS: Do not translate app name
 #: src/Windows/Window.vala:13 src/Windows/Window.vala:26
 msgid "Cherrypick"
 msgstr "Cherrypick"
@@ -27,12 +26,10 @@ msgstr "Cherrypick"
 msgid "Cherrypick (Devel)"
 msgstr "Cherrypick (Devel)"
 
-#. ---------------- FORMAT ----------------
 #: src/Views/MainView.vala:72
 msgid "Format"
 msgstr "Format"
 
-#. ---------------- BIG BUTTON ----------------
 #: src/Views/MainView.vala:88
 msgid "Pick Color"
 msgstr "Odaberi boju"
@@ -88,3 +85,52 @@ msgstr "Povijest je obnovljena"
 #: src/Application.vala:110
 msgid "Pick a colour and copy it to clipboard"
 msgstr "Odaberi boju i kopiraj je u međuspremnik"
+
+#~ msgid "Color Picker"
+#~ msgstr "Birač boja"
+
+#~ msgid "Pick colors on your screen"
+#~ msgstr "Odaberi boju na ekranu"
+
+#~ msgid "Color;Pick;Eyedropper;Picker;"
+#~ msgstr "Boja;Odaberi;Kapaljka;Birač;"
+
+#~ msgid "Pick a color"
+#~ msgstr "Odaberi boju"
+
+#~ msgid "A modern and trusty color picker"
+#~ msgstr "Moderan i pouzdan birač boja"
+
+#~ msgid "Features:"
+#~ msgstr "Funkcije:"
+
+#~ msgid "Choose different output formats (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
+#~ msgstr "Odaberi različite izlazne formate (RGB, RGBA, HEX, CMYK, HSL, HSLA)"
+
+#~ msgid "Remembers your preferred format"
+#~ msgstr "Pamti tvoj preferirani format"
+
+#~ msgid ""
+#~ "Color history remembers your last picked colors (hover to check their "
+#~ "code)"
+#~ msgstr ""
+#~ "Povijest boja pamti tvoje zadnje odabrane boje (zadrži miša nad bojom za "
+#~ "prikaz njenog koda)"
+
+#~ msgid ""
+#~ "Curious about a color? Copy paste it from your clipboard to preview it"
+#~ msgstr ""
+#~ "Zanima te boja? Kopiraj je i zalijepi iz međuspremnika te je pregledaj"
+
+#~ msgid "You can set a keybind to immediately pick and copy to clipboard!"
+#~ msgstr ""
+#~ "Možeš postaviti tipkovnicu da odmah odabere i kopira u međuspremnik!"
+
+#~ msgid "PhoneyBadger + Stella and Charlie"
+#~ msgstr "PhoneyBadger + Stella i Charlie"
+
+#~ msgid "Cherrypick's main window"
+#~ msgstr "Glavni prozor aplikacije Cherrypick"
+
+#~ msgid "Main window with dark theme"
+#~ msgstr "Glavni prozor s tamnom temom"

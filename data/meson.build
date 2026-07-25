@@ -58,7 +58,7 @@ desktop_file = i18n.merge_file(
     po_dir: meson.project_source_root() / 'po' / 'extra',
     type: 'desktop',
     install: true,
-    install_dir: get_option('datadir') / 'applications',
+    install_dir: datadir / 'applications',
 )
 
 desktop_utils = find_program('desktop-file-validate', required: false)
@@ -81,7 +81,7 @@ appstream_file = i18n.merge_file(
     po_dir: meson.project_source_root() / 'po' / 'extra',
     type: 'xml',
     install: true,
-    install_dir: get_option('datadir') / 'metainfo',
+    install_dir: datadir / 'metainfo',
 )
 
 appstreamcli = find_program('appstreamcli', required: false)

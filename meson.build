@@ -1,8 +1,9 @@
 project(
     'cherrypick', 
-    'c', 'vala', 
-    version: '2.4.1',
-    license: 'GPL-3.0-or-later'
+    ['c', 'vala'],            # The floor is vala
+    license: 'GPL-3.0-or-later',
+    version: '2.4.1',                   # Versioning: first should follow Gtk version, second and third depending how proud you are of the update
+    meson_version: '>= 1.1'             # Use meson.option instead of meson_options.txt
     )
 
 app_name = meson.project_name()
@@ -21,33 +22,54 @@ else
 endif
 
 app_version = meson.project_version()
+nicename = 'Cherrypick'
+publisher = 'elly-code'
 
 #================================
-# Include Gnome and the translations module
-gnome = import('gnome')
-i18n = import('i18n')
-vala_flags = []
+# Preparation
 
-development_build = get_option('development')
-if development_build
+prefix = get_option('prefix')
+datadir = get_option('datadir')
+
+development = get_option('development')
+if development
   app_id +=  '.devel'
-  vala_flags += ['--define', 'DEVEL']
+  add_project_arguments('--define=DEVEL', '--define=LATTE', language: 'vala')
+
 endif
 
+gnome = import('gnome')
+i18n = import('i18n')
 
-# Set our translation domain
-add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (app_name), language:'c')
+add_project_arguments(
+    '-DGETTEXT_PACKAGE="@0@"'.format (app_id),           # 
+    '-DG_LOG_DOMAIN="@0@"'.format (app_id),              # Dev builds add the app_id to G_MESSAGES_DEBUG
+    '-w',                                                       # Because of Vala we get ten thousand warnings we can do nothing about
+    language:'c'
+    )
 
+
+# Play nice with clang
+# https://gitlab.gnome.org/GNOME/vala/-/issues/1413#note_1707480
+if meson.get_compiler ('c').get_id () == 'clang'
+    add_project_arguments('-Wno-incompatible-function-pointer-types', language: 'c')
+endif
 
 #================================
+# Add subfolders for Meson to look
 
-# config_data is reused accross all project to propagate variables we set once
-config_data = configuration_data()
-config_data.set('LOCALEDIR', get_option('prefix') / get_option('localedir'))
-config_data.set('APP_NAME', app_name)
-config_data.set('APP_ID', app_id)
-config_data.set('APP_PATH', app_path)
-config_data.set('APP_VERSION', app_version)
+config_data = configuration_data(
+    {
+        'APP_NAME': app_name,
+        'APP_ID': app_id,
+        'APP_PATH': app_path,
+        'APP_VERSION': app_version,
+        'NICENAME': nicename,
+        'PUBLISHER': publisher,
+        'ALTERNATE_APP_ID': alternate_app_id,
+        'LOCALEDIR': prefix / get_option('localedir')
+        }
+    )
 
 subdir('po')
 subdir('data')
