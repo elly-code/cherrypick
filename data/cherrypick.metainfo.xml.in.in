@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>@APP_ID@</id>
-  <name>Cherrypick</name>
-  <summary>Pick colors on your screen</summary>
-  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
   <metadata_license>CC-BY-4.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
+  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
+  <translation type="gettext">@APP_ID@</translation>
 
+  <name>Cherrypick</name>
+  <summary>Pick colors on your screen</summary>
   <description>
     <p>A modern and trusty color picker</p>
     <p>Features:</p>
@@ -28,7 +29,7 @@
   </replaces>
 
   <content_rating type="oars-1.1"/>
-  <translation type="gettext">@APP_ID@</translation>
+
   <recommends>
     <control>pointing</control>
     <control>touch</control>
